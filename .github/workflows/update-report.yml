@@ -1,0 +1,70 @@
+name: Update Merchant Review Report
+
+on:
+  schedule:
+    - cron: '0 23 * * *'   # 9:00 AM AEST = 23:00 UTC previous day
+  workflow_dispatch:         # Allow manual trigger
+
+jobs:
+  update-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Google API client
+        run: pip install google-auth google-api-python-client --quiet
+
+      - name: Fetch latest report from Drive
+        env:
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          python3 - << 'PYEOF'
+          import json, os, io
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaIoBaseDownload
+
+          creds = service_account.Credentials.from_service_account_info(
+              json.loads(os.environ['GOOGLE_SA_JSON']),
+              scopes=['https://www.googleapis.com/auth/drive.readonly']
+          )
+          drive = build('drive', 'v3', credentials=creds)
+
+          # Find CU folder
+          folders = drive.files().list(
+              q="name='CU' and mimeType='application/vnd.google-apps.folder' and trashed=false",
+              fields='files(id)'
+          ).execute().get('files', [])
+          if not folders:
+              raise SystemExit('CU folder not found — share it with the service account')
+          folder_id = folders[0]['id']
+
+          # Find latest merchant_review HTML file
+          files = drive.files().list(
+              q=f"'{folder_id}' in parents and name contains 'merchant_review' and mimeType='text/html' and trashed=false",
+              orderBy='createdTime desc',
+              pageSize=1,
+              fields='files(id,name)'
+          ).execute().get('files', [])
+          if not files:
+              raise SystemExit('No merchant_review HTML found in CU folder')
+
+          print(f"Downloading: {files[0]['name']}")
+          req = drive.files().get_media(fileId=files[0]['id'])
+          buf = io.BytesIO()
+          dl = MediaIoBaseDownload(buf, req)
+          done = False
+          while not done:
+              _, done = dl.next_chunk()
+          with open('index.html', 'wb') as f:
+              f.write(buf.getvalue())
+          print('Saved index.html')
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --staged --quiet || git commit -m "Merchant Review update $(date +%Y-%m-%d)"
+          git push

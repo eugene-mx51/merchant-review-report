@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<template id="__bundler_thumbnail" data-bg-color="#F5F5F5">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#F5F5F5"/>
+    <rect x="300" y="140" width="600" height="520" rx="28" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="2"/>
+    <text x="360" y="250" font-family="Roboto, sans-serif" font-size="64" font-weight="700" fill="#0A0A0A">m<tspan fill="#8B5CF6">×</tspan>51</text>
+    <rect x="360" y="300" width="360" height="20" rx="6" fill="#262626"/>
+    <rect x="360" y="360" width="480" height="12" rx="6" fill="#D4D4D4"/>
+    <rect x="360" y="390" width="440" height="12" rx="6" fill="#D4D4D4"/>
+    <rect x="360" y="450" width="480" height="80" rx="12" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="2"/>
+    <rect x="360" y="560" width="220" height="44" rx="10" fill="#8B5CF6"/>
+  </svg>
+</template>
+<link rel="stylesheet" href="_ds/mx5001-design-system-eae6e501-4b6a-4530-8158-9296214b1ff1/colors_and_type.css">
+<script src="_ds/mx5001-design-system-eae6e501-4b6a-4530-8158-9296214b1ff1/_ds_bundle.js"></script>
+<style>
+  body { background: var(--mx-grey-100); margin: 0; }
+  input, textarea, select {
+    font: var(--mx-text-body-m);
+    color: var(--mx-ink-900);
+    background: #fff;
+    border: 1px solid var(--mx-border-strong);
+    border-radius: var(--mx-radius-md);
+    padding: 10px 14px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: box-shadow var(--mx-duration-standard) var(--mx-ease-standard), border-color var(--mx-duration-standard) var(--mx-ease-standard);
+  }
+  input::placeholder, textarea::placeholder { color: var(--mx-ink-400); }
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--mx-purple-500);
+    box-shadow: 0 0 0 3px var(--mx-purple-100);
+  }
+  textarea { resize: vertical; min-height: 84px; font: var(--mx-text-body-m); }
+  .pv-cell-input { border: 1px solid transparent; background: transparent; padding: 8px 10px; border-radius: var(--mx-radius-sm); }
+  .pv-cell-input:hover { border-color: var(--mx-border); }
+  .pv-cell-input:focus { background: #fff; }
+  @media print {
+    body { background: #fff; }
+    .pv-noprint { display: none !important; }
+    .pv-page { box-shadow: none !important; border: none !important; }
+  }
+</style>
+</helmet>
+<div style="min-height:100vh; padding:40px 20px; font-family:var(--mx-font-sans);">
+  <div class="pv-page" style="max-width:880px; margin:0 auto; background:#fff; border:1px solid var(--mx-border); border-radius:var(--mx-radius-xl); box-shadow:var(--mx-shadow-1); overflow:hidden;">
+
+    <!-- Masthead -->
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:24px 40px; border-bottom:1px solid var(--mx-border-subtle);">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="font-weight:700; font-size:22px; color:var(--mx-ink-900); letter-spacing:-0.02em;">m<span style="color:var(--mx-purple-500);">×</span>51</span>
+        <span style="font:var(--mx-text-label-m); color:var(--mx-ink-500); letter-spacing:0.5px; text-transform:uppercase;">Merchant Services</span>
+      </div>
+      <div style="font:var(--mx-text-label-m); color:var(--mx-ink-500); display:flex; align-items:center; gap:6px;">
+        <span>Ref</span>
+        <span style="font-family:var(--mx-font-mono); color:var(--mx-purple-700); font-weight:500;">{{ refNumber }}</span>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div style="padding:36px 40px 28px;">
+      <h1 style="font:var(--mx-text-headline-l); color:var(--mx-ink-900); letter-spacing:-0.01em; margin:0 0 14px;">Pricing Variation Agreement</h1>
+      <p style="font:var(--mx-text-body-m); color:var(--mx-ink-600);">This Pricing Variation Agreement is a formal amendment to the Merchant Services Agreement between the parties identified below. It records agreed changes to the merchant's pricing schedule, reserve conditions, or both, and forms part of the merchant's contractual documentation upon execution.</p>
+      <p style="font:var(--mx-text-body-s); color:var(--mx-ink-500); margin-top:10px;">All variations take effect from the Effective Date specified and are subject to the terms of the original agreement, which remains binding in all other respects. Retain for the duration of the merchant relationship and a minimum of seven (7) years following termination.</p>
+      <p style="font:var(--mx-text-body-s); color:var(--mx-ink-600); margin-top:14px;"><span style="color:var(--mx-error);">*</span> Indicates a required field.</p>
+    </div>
+
+    <!-- Section 1 -->
+    <section style="padding:0 40px 32px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <span style="width:26px; height:26px; border-radius:var(--mx-radius-full); background:var(--mx-purple-100); color:var(--mx-purple-700); font:var(--mx-text-label-l); display:flex; align-items:center; justify-content:center;">1</span>
+        <h2 style="font:var(--mx-text-title-l); color:var(--mx-ink-900); margin:0;">Identification</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px 24px;">
+        <div style="display:flex; flex-direction:column; gap:6px; grid-column:1 / -1;">
+          <label style="font:var(--mx-text-label-m); color:var(--mx-ink-800); letter-spacing:0.1px;">Merchant legal name<span style="color:var(--mx-error); margin-left:2px;">*</span></label>
+          <input type="text" placeholder="Registered entity name" />
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <label style="font:var(--mx-text-label-m); color:var(--mx-ink-800); letter-spacing:0.1px;">Trading name<span style="color:var(--mx-error); margin-left:2px;">*</span></label>
+          <input type="text" placeholder="As shown on statements" />
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <label style="font:var(--mx-text-label-m); color:var(--mx-ink-800); letter-spacing:0.1px;">MID(s)<span style="color:var(--mx-error); margin-left:2px;">*</span></label>
+          <input type="text" placeholder="e.g. 88001234, 88001235" style="font-family:var(--mx-font-mono);" />
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <label style="font:var(--mx-text-label-m); color:var(--mx-ink-800); letter-spacing:0.1px;">Date of original agreement<span style="color:var(--mx-error); margin-left:2px;">*</span></label>
+          <input type="date" />
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <label style="font:var(--mx-text-label-m); color:var(--mx-ink-800); letter-spacing:0.1px;">Effective date of change<span style="color:var(--mx-error); margin-left:2px;">*</span></label>
+          <input type="date" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section style="padding:0 40px 32px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <span style="width:26px; height:26px; border-radius:var(--mx-radius-full); background:var(--mx-purple-100); color:var(--mx-purple-700); font:var(--mx-text-label-l); display:flex; align-items:center; justify-content:center;">2</span>
+        <h2 style="font:var(--mx-text-title-l); color:var(--mx-ink-900); margin:0;">Current vs. proposed pricing schedule</h2>
+      </div>
+      <div style="border:1px solid var(--mx-border); border-radius:var(--mx-radius-lg); overflow:hidden;">
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr style="background:var(--mx-surface-sunken);">
+              <th style="text-align:left; font:var(--mx-text-label-m); color:var(--mx-ink-600); letter-spacing:0.5px; text-transform:uppercase; padding:12px 14px; border-bottom:1px solid var(--mx-border);">Fee type</th>
+              <th style="text-align:left; font:var(--mx-text-label-m); color:var(--mx-ink-600); letter-spacing:0.5px; text-transform:uppercase; padding:12px 14px; border-bottom:1px solid var(--mx-border); width:130px;">Current rate</th>
+              <th style="text-align:left; font:var(--mx-text-label-m); color:var(--mx-ink-600); letter-spacing:0.5px; text-transform:uppercase; padding:12px 14px; border-bottom:1px solid var(--mx-border); width:130px;">New rate</th>
+              <th style="text-align:left; font:var(--mx-text-label-m); color:var(--mx-ink-600); letter-spacing:0.5px; text-transform:uppercase; padding:12px 14px; border-bottom:1px solid var(--mx-border); width:150px;">Effective date</th>
+              <th class="pv-noprint" style="width:44px; border-bottom:1px solid var(--mx-border);"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ rows }}" as="row" hint-placeholder-count="4">
+              <tr style="border-bottom:1px solid var(--mx-border-subtle);">
+                <td style="padding:4px 8px;"><input class="pv-cell-input" type="text" value="{{ row.fee }}" placeholder="Fee type" onChange="{{ row.onFee }}" /></td>
+                <td style="padding:4px 8px;"><input class="pv-cell-input" type="text" value="{{ row.current }}" placeholder="—" onChange="{{ row.onCurrent }}" style="font-family:var(--mx-font-mono); color:var(--mx-ink-700);" /></td>
+                <td style="padding:4px 8px;"><input class="pv-cell-input" type="text" value="{{ row.proposed }}" placeholder="—" onChange="{{ row.onProposed }}" style="font-family:var(--mx-font-mono); color:var(--mx-purple-700); font-weight:500;" /></td>
+                <td style="padding:4px 8px;"><input class="pv-cell-input" type="text" value="{{ row.effective }}" placeholder="DD/MM/YYYY" onChange="{{ row.onEffective }}" style="font-family:var(--mx-font-mono);" /></td>
+                <td class="pv-noprint" style="text-align:center; padding:4px 8px;"><button onClick="{{ row.onRemove }}" title="Remove row" style="border:none; background:none; cursor:pointer; color:var(--mx-ink-400); width:28px; height:28px; border-radius:var(--mx-radius-sm); font-size:18px; line-height:1;" style-hover="{{ removeHover }}">×</button></td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+        <div class="pv-noprint" style="padding:10px 14px; background:var(--mx-surface-sunken); border-top:1px solid var(--mx-border-subtle);">
+          <button onClick="{{ addRow }}" style="border:none; background:none; cursor:pointer; color:var(--mx-purple-600); font:var(--mx-text-label-l); display:inline-flex; align-items:center; gap:6px; padding:4px 6px;">+ Add fee row</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section style="padding:0 40px 32px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <span style="width:26px; height:26px; border-radius:var(--mx-radius-full); background:var(--mx-purple-100); color:var(--mx-purple-700); font:var(--mx-text-label-l); display:flex; align-items:center; justify-content:center;">3</span>
+        <h2 style="font:var(--mx-text-title-l); color:var(--mx-ink-900); margin:0;">Reason for variation</h2>
+      </div>
+      <textarea placeholder="e.g. Rate adjustment reflecting updated interchange schedule, or risk-based pricing review."></textarea>
+    </section>
+
+    <!-- Section 4 -->
+    <section style="padding:0 40px 32px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+        <span style="width:26px; height:26px; border-radius:var(--mx-radius-full); background:var(--mx-purple-100); color:var(--mx-purple-700); font:var(--mx-text-label-l); display:flex; align-items:center; justify-content:center;">4</span>
+        <h2 style="font:var(--mx-text-title-l); color:var(--mx-ink-900); margin:0;">Continuation of original terms</h2>
+      </div>
+      <div style="background:var(--mx-surface-sunken); border:1px solid var(--mx-border); border-radius:var(--mx-radius-lg); padding:18px 20px;">
+        <p style="font:var(--mx-text-body-m); color:var(--mx-ink-700);">Except for the specific terms varied by this Agreement, all other terms and conditions of the original Merchant Services Agreement remain in full force and effect, and continue to be enforceable under their original conditions.</p>
+        <label style="display:flex; align-items:flex-start; gap:10px; margin-top:16px; cursor:pointer;">
+          <input type="checkbox" style="width:18px; height:18px; accent-color:var(--mx-purple-500); margin-top:1px; flex:none;" />
+          <span style="font:var(--mx-text-body-m); color:var(--mx-ink-800);">Both parties acknowledge that the original agreement remains binding in all other respects.</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section style="padding:0 40px 36px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <span style="width:26px; height:26px; border-radius:var(--mx-radius-full); background:var(--mx-purple-100); color:var(--mx-purple-700); font:var(--mx-text-label-l); display:flex; align-items:center; justify-content:center;">5</span>
+        <h2 style="font:var(--mx-text-title-l); color:var(--mx-ink-900); margin:0;">Acceptance &amp; signature</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px;">
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <span style="font:var(--mx-text-label-m); color:var(--mx-ink-500); letter-spacing:0.5px; text-transform:uppercase;">Merchant authorised signatory</span>
+          <div style="display:flex; flex-direction:column; gap:6px;"><label style="font:var(--mx-text-label-m); color:var(--mx-ink-800);">Name<span style="color:var(--mx-error); margin-left:2px;">*</span></label><input type="text" placeholder="Full name" /></div>
+          <div style="display:flex; flex-direction:column; gap:6px;"><label style="font:var(--mx-text-label-m); color:var(--mx-ink-800);">Signature<span style="color:var(--mx-error); margin-left:2px;">*</span></label><div style="height:64px; border-bottom:2px solid var(--mx-border-strong); border-radius:0;"></div></div>
+          <div style="display:flex; flex-direction:column; gap:6px;"><label style="font:var(--mx-text-label-m); color:var(--mx-ink-800);">Date signed<span style="color:var(--mx-error); margin-left:2px;">*</span></label><input type="date" /></div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <span style="font:var(--mx-text-label-m); color:var(--mx-ink-500); letter-spacing:0.5px; text-transform:uppercase;">MX51 representative</span>
+          <div style="display:flex; flex-direction:column; gap:6px;"><label style="font:var(--mx-text-label-m); color:var(--mx-ink-800);">Name<span style="color:var(--mx-error); margin-left:2px;">*</span></label><input type="text" placeholder="Full name" /></div>
+          <div style="display:flex; flex-direction:column; gap:6px;"><label style="font:var(--mx-text-label-m); color:var(--mx-ink-800);">Signature<span style="color:var(--mx-error); margin-left:2px;">*</span></label><div style="height:64px; border-bottom:2px solid var(--mx-border-strong); border-radius:0;"></div></div>
+          <div style="display:flex; flex-direction:column; gap:6px;"><label style="font:var(--mx-text-label-m); color:var(--mx-ink-800);">Date signed<span style="color:var(--mx-error); margin-left:2px;">*</span></label><input type="date" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actions -->
+    <div class="pv-noprint" style="display:flex; align-items:center; justify-content:flex-end; gap:12px; padding:20px 40px; border-top:1px solid var(--mx-border-subtle); background:var(--mx-surface-sunken);">
+      <button onClick="{{ onPrint }}" style="border:1px solid var(--mx-border-strong); background:#fff; color:var(--mx-ink-800); font:var(--mx-text-label-l); padding:10px 18px; border-radius:var(--mx-radius-md); cursor:pointer;" style-hover="{{ secondaryHover }}">Print / save PDF</button>
+      <button onClick="{{ onSubmit }}" style="border:none; background:var(--mx-purple-500); color:#fff; font:var(--mx-text-label-l); padding:10px 20px; border-radius:var(--mx-radius-md); cursor:pointer;" style-hover="{{ primaryHover }}">{{ submitLabel }}</button>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    refNumber: 'VA-0023',
+    submitted: false,
+    rows: [
+      { fee: 'MDR – Visa/MC Debit',  current: '0.80%',  proposed: '0.95%',  effective: 'DD/MM/YYYY' },
+      { fee: 'MDR – Visa/MC Credit', current: '1.20%',  proposed: '1.45%',  effective: 'DD/MM/YYYY' },
+      { fee: 'Terminal Rental',      current: '$29/mth', proposed: '$29/mth', effective: 'No change' },
+      { fee: 'Monthly Service Fee',  current: '$0',      proposed: '$15/mth', effective: 'DD/MM/YYYY' },
+    ],
+  };
+
+  setRow(i, key, val) {
+    this.setState(s => {
+      const rows = s.rows.slice();
+      rows[i] = { ...rows[i], [key]: val };
+      return { rows };
+    });
+  }
+
+  renderVals() {
+    const rows = this.state.rows.map((r, i) => ({
+      ...r,
+      onFee: e => this.setRow(i, 'fee', e.target.value),
+      onCurrent: e => this.setRow(i, 'current', e.target.value),
+      onProposed: e => this.setRow(i, 'proposed', e.target.value),
+      onEffective: e => this.setRow(i, 'effective', e.target.value),
+      onRemove: () => this.setState(s => ({ rows: s.rows.filter((_, j) => j !== i) })),
+    }));
+
+    return {
+      refNumber: this.state.refNumber,
+      rows,
+      submitLabel: this.state.submitted ? 'Submitted ✓' : 'Submit variation',
+      onRefChange: e => this.setState({ refNumber: e.target.value }),
+      addRow: () => this.setState(s => ({ rows: [...s.rows, { fee: '', current: '', proposed: '', effective: '' }] })),
+      onPrint: () => window.print(),
+      onSubmit: () => this.setState({ submitted: true }),
+      primaryHover: { background: 'var(--mx-purple-600)' },
+      secondaryHover: { background: 'var(--mx-surface-pressed)' },
+      removeHover: { background: 'var(--mx-error-container)', color: 'var(--mx-error)' },
+    };
+  }
+}
+</script>
+</body>
+</html>

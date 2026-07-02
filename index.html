@@ -1,0 +1,115 @@
+<title>Merchant Review — 2 Jul 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a2332; }
+.header { background: #1a2332; color: white; padding: 24px 32px; }
+.header h1 { font-size: 20px; font-weight: 600; }
+.header .sub { font-size: 13px; color: #8ba0b8; margin-top: 4px; }
+.stats { background: white; border-bottom: 1px solid #e8ecf0; padding: 16px 32px; display: flex; gap: 40px; flex-wrap: wrap; }
+.stat .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: #6b7a8d; font-weight: 500; }
+.stat .val { font-size: 28px; font-weight: 700; color: #1a2332; }
+.s-high .val { color: #2d7d46; } .s-med .val { color: #b07800; } .s-low .val { color: #c0392b; } .s-flag .val { color: #d44000; }
+.content { padding: 24px 32px; }
+.flagged { background: #fff8f0; border-left: 4px solid #e08000; border-radius: 6px; padding: 16px 20px; margin-bottom: 24px; }
+.flagged h2 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #c05000; margin-bottom: 12px; }
+.fi { padding: 10px 0; border-bottom: 1px solid #f0e0c0; }
+.fi:last-child { border-bottom: none; }
+.fi-name { font-weight: 600; font-size: 14px; }
+.fi-addr { color: #6b7a8d; font-size: 12px; margin-top: 2px; }
+.fi-reasons { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
+.fi-osint { font-size: 12px; color: #666; margin-top: 5px; font-style: italic; }
+.tw { overflow-x: auto; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+table { width: 100%; border-collapse: collapse; background: white; font-size: 13px; }
+thead th { background: #1a2332; color: white; padding: 10px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; white-space: nowrap; }
+tbody td { padding: 9px 12px; vertical-align: top; border-bottom: 1px solid #eef0f3; }
+.rl { background-color: #d8ebce; } .rm { background-color: #fff0cc; } .rh { background-color: #f5cdcd; }
+.badge { display: inline-block; padding: 2px 9px; border-radius: 12px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.bh { background: #c6e6c6; color: #1a6b2a; } .bm { background: #ffeea0; color: #7a5c00; } .bl { background: #f5cdcd; color: #8b0000; }
+.bc { background: #dbeafe; color: #1e40af; } .br { background: #ffedd5; color: #c2410c; } .bu { background: #f1f1f1; color: #555; }
+.bmoto { background: #f3e8ff; color: #6b21a8; }
+.footer { text-align: center; padding: 16px 32px 24px; font-size: 11px; color: #9aa5b4; }
+.footer a { color: #4a90e2; text-decoration: none; }
+</style>
+
+<div class="header">
+  <h1>Merchant Review — 2 Jul 2026</h1>
+  <p class="sub">Daily automated review · mx51</p>
+</div>
+
+<div class="stats">
+  <div class="stat s-total">
+    <div class="lbl">TOTAL</div>
+    <div class="val">1</div>
+  </div>
+  <div class="stat s-high">
+    <div class="lbl">HIGH CONFIDENCE</div>
+    <div class="val">0</div>
+  </div>
+  <div class="stat s-med">
+    <div class="lbl">MED CONFIDENCE</div>
+    <div class="val">0</div>
+  </div>
+  <div class="stat s-low">
+    <div class="lbl">LOW CONFIDENCE</div>
+    <div class="val">1</div>
+  </div>
+  <div class="stat s-flag">
+    <div class="lbl">FLAGGED</div>
+    <div class="val">1</div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="flagged">
+    <h2>🚩 Flagged for Review</h2>
+    <div class="fi">
+      <div class="fi-name">IB Supermarket</div>
+      <div class="fi-addr">126 Military Road, Guildford, NSW, 2161, AU</div>
+      <div class="fi-reasons">
+        <span class="badge bl">Low confidence</span>
+      </div>
+      <div class="fi-osint">OSINT: No social media presence, no directory listing, and no address confirmation found for 'IB Supermarket' at 126 Military Road or anywhere in Guildford NSW. Zero online footprint noted — nearby businesses exist at 128 and 130–131 Military Road but nothing at 126 identified as a supermarket.</div>
+    </div>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead>
+        <tr>
+          <th>Legal Name</th>
+          <th>Trading Name</th>
+          <th>Trading Address</th>
+          <th>Google Trading Name</th>
+          <th>Google Trading Address</th>
+          <th>Confidence Level</th>
+          <th>MCC</th>
+          <th>Assumed MCC</th>
+          <th>MCC Description</th>
+          <th>Address Type</th>
+          <th>MOTO</th>
+          <th>Risk Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="rm">
+          <td>IB SUPERMARKET PTY LTD</td>
+          <td>IB Supermarket</td>
+          <td>126 Military Road, Guildford, NSW, 2161, AU</td>
+          <td>Guilford African Market</td>
+          <td>123 Military Rd, Guildford NSW 2161, Australia</td>
+          <td><span class="badge bl">Low</span></td>
+          <td>5411</td>
+          <td>5411</td>
+          <td>Grocery Stores and Supermarkets</td>
+          <td><span class="badge bc">Commercial</span></td>
+          <td>FALSE</td>
+          <td><strong>2</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  Generated 2026-07-03 08:57 AEST · CCR automated pipeline · <a href="https://docs.google.com/spreadsheets/d/1bSxscedqOHJBSiFC71vAY82ewKDtR96iauZ3Xt3xHlc/edit">Open Google Sheet →</a>
+</div>

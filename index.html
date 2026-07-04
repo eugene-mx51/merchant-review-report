@@ -1,117 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Merchant Review — 3 Jul 2026</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a2332; }
-.header { background: #1a2332; color: white; padding: 24px 32px; }
-.header h1 { font-size: 20px; font-weight: 600; }
-.header .sub { font-size: 13px; color: #8ba0b8; margin-top: 4px; }
-.stats { background: white; border-bottom: 1px solid #e8ecf0; padding: 16px 32px; display: flex; gap: 40px; flex-wrap: wrap; }
-.stat .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: #6b7a8d; font-weight: 500; }
-.stat .val { font-size: 28px; font-weight: 700; color: #1a2332; }
-.s-high .val { color: #2d7d46; } .s-med .val { color: #b07800; } .s-low .val { color: #c0392b; } .s-flag .val { color: #d44000; }
-.content { padding: 24px 32px; }
-.flagged { background: #fff8f0; border-left: 4px solid #e08000; border-radius: 6px; padding: 16px 20px; margin-bottom: 24px; }
-.flagged h2 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #c05000; margin-bottom: 12px; }
-.fi { padding: 10px 0; border-bottom: 1px solid #f0e0c0; }
-.fi:last-child { border-bottom: none; }
-.fi-name { font-weight: 600; font-size: 14px; }
-.fi-addr { color: #6b7a8d; font-size: 12px; margin-top: 2px; }
-.fi-reasons { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
-.fi-osint { font-size: 12px; color: #666; margin-top: 5px; font-style: italic; }
-.tw { overflow-x: auto; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-table { width: 100%; border-collapse: collapse; background: white; font-size: 13px; }
-thead th { background: #1a2332; color: white; padding: 10px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; white-space: nowrap; }
-tbody td { padding: 9px 12px; vertical-align: top; border-bottom: 1px solid #eef0f3; }
-.rl { background-color: #d8ebce; } .rm { background-color: #fff0cc; } .rh { background-color: #f5cdcd; }
-.badge { display: inline-block; padding: 2px 9px; border-radius: 12px; font-size: 11px; font-weight: 600; white-space: nowrap; }
-.bh { background: #c6e6c6; color: #1a6b2a; } .bm { background: #ffeea0; color: #7a5c00; } .bl { background: #f5cdcd; color: #8b0000; }
-.bc { background: #dbeafe; color: #1e40af; } .br { background: #ffedd5; color: #c2410c; } .bu { background: #f1f1f1; color: #555; }
-.bmoto { background: #f3e8ff; color: #6b21a8; }
-.footer { text-align: center; padding: 16px 32px 24px; font-size: 11px; color: #9aa5b4; }
-.footer a { color: #4a90e2; text-decoration: none; }
+:root {
+  --ink:    #0f1e2d;
+  --ink-2:  #4f637a;
+  --ink-3:  #8fa4b8;
+  --mist:   #eef3f9;
+  --surf:   #ffffff;
+  --line:   #dce5ef;
+  --accent: #0ea5e9;
+
+  --go:     #059669; --go-bg:  #ecfdf5; --go-bd: #6ee7b7;
+  --warn:   #dc2626; --warn-bg:#fff1f1; --warn-bd:#fca5a5;
+  --amber:  #c2710c; --amb-bg: #fffbeb; --amb-bd: #fcd34d;
+  --blue:   #1d4ed8; --blue-bg:#eff6ff; --blue-bd:#93c5fd;
+  --plum:   #6d28d9; --plum-bg:#f5f3ff; --plum-bd:#c4b5fd;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--mist);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+  background: var(--ink);
+  height: 48px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.brand-pip {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.header-date {
+  font-size: 12px;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 16px 52px;
+}
+
+.status-hero {
+  background: var(--surf);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 36px 24px 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.status-num {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.status-hero.is-flagged .status-num { color: var(--warn); }
+.status-hero.is-clear   .status-num { color: var(--go);   }
+.status-label {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 8px;
+}
+.status-sub {
+  font-size: 13px;
+  color: var(--ink-2);
+  margin-top: 5px;
+}
+
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.stat-cell {
+  background: var(--surf);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+}
+.stat-n {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stat-cell.s-total .stat-n { color: var(--ink);  }
+.stat-cell.s-high  .stat-n { color: var(--go);   }
+.stat-cell.s-med   .stat-n { color: var(--amber); }
+.stat-cell.s-low   .stat-n { color: var(--warn);  }
+.stat-lbl {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.s-head {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.s-head::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.flag-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.flag-card {
+  background: var(--surf);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--warn);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.flag-card.risk-amber { border-left-color: var(--amber); }
+
+.fc-name  { font-size: 15px; font-weight: 700; line-height: 1.3; }
+.fc-addr  { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+.fc-tags  { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 9px;
+  border-radius: 20px;
+  border: 1px solid;
+}
+.t-low  { background: var(--warn-bg); color: var(--warn);  border-color: var(--warn-bd); }
+.t-mcc  { background: var(--amb-bg);  color: var(--amber); border-color: var(--amb-bd);  }
+.t-res  { background: var(--blue-bg); color: var(--blue);  border-color: var(--blue-bd); }
+.t-moto { background: var(--plum-bg); color: var(--plum);  border-color: var(--plum-bd); }
+
+.fc-osint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--ink-2);
+  font-style: italic;
+  padding: 6px 10px;
+  background: var(--mist);
+  border-radius: 5px;
+  border-left: 2px solid var(--line);
+}
+
+.all-clear {
+  background: var(--go-bg);
+  border: 1px solid var(--go-bd);
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: var(--go);
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surf);
+  font-size: 12px;
+  min-width: 620px;
+  font-variant-numeric: tabular-nums;
+}
+thead th {
+  background: var(--ink);
+  color: #7fa0bb;
+  padding: 9px 12px;
+  text-align: left;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+thead th:first-child { color: #e0eaf4; }
+tbody tr           { border-bottom: 1px solid var(--mist); }
+tbody tr:last-child { border-bottom: none; }
+tbody td           { padding: 9px 12px; vertical-align: middle; }
+
+.tr-g { background: #f5fef8; }
+.tr-y { background: #fefdf0; }
+.tr-r { background: #fff6f6; }
+
+.b {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid;
+}
+.b-hi  { background: #f0fdf4; color: #166534; border-color: #86efac; }
+.b-md  { background: #fffbeb; color: #92400e; border-color: #fcd34d; }
+.b-lo  { background: #fff1f1; color: #991b1b; border-color: #fca5a5; }
+.b-com { background: #eff6ff; color: #1e40af; border-color: #93c5fd; }
+.b-res { background: #fff7ed; color: #c2410c; border-color: #fdba74; }
+.b-unk { background: #f8fafc; color: #64748b; border-color: #cbd5e1; }
+.b-moto{ background: #faf5ff; color: #5b21b6; border-color: #c4b5fd; }
+
+.rs   { font-weight: 700; font-size: 14px; }
+.rs-g { color: var(--go);   }
+.rs-y { color: var(--amber);}
+.rs-r { color: var(--warn); }
+
+.site-footer {
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.footer-links { display: flex; gap: 16px; }
+.footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.footer-links a:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .status-num { font-size: 56px; }
+  .stat-n { font-size: 20px; }
+  .stats-strip { gap: 6px; }
+}
 </style>
+</head>
+<body>
 
-<div class="header">
-  <h1>Merchant Review — 3 Jul 2026</h1>
-  <p class="sub">Daily automated review · mx51</p>
-</div>
+<header class="site-header">
+  <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
+  <div class="header-date">3 Jul 2026</div>
+</header>
 
-<div class="stats">
-  <div class="stat s-total">
-    <div class="lbl">TOTAL</div>
-    <div class="val">1</div>
-  </div>
-  <div class="stat s-high">
-    <div class="lbl">HIGH CONFIDENCE</div>
-    <div class="val">0</div>
-  </div>
-  <div class="stat s-med">
-    <div class="lbl">MED CONFIDENCE</div>
-    <div class="val">0</div>
-  </div>
-  <div class="stat s-low">
-    <div class="lbl">LOW CONFIDENCE</div>
-    <div class="val">1</div>
-  </div>
-  <div class="stat s-flag">
-    <div class="lbl">FLAGGED</div>
-    <div class="val">1</div>
-  </div>
-</div>
+<div class="page">
 
-<div class="content">
+  <div class="status-hero is-flagged">
+    <div class="status-num">1</div>
+    <div class="status-label">merchants need attention</div>
+    <div class="status-sub">of 2 reviewed today</div>
+  </div>
 
-  <div class="flagged">
-    <h2>🚩 Flagged for Review</h2>
-    <div class="fi">
-      <div class="fi-name">IB Supermarket</div>
-      <div class="fi-addr">126 Military Road, Guildford, NSW, 2161, AU</div>
-      <div class="fi-reasons">
-        <span class="badge bl">Low confidence</span>
+  <div class="stats-strip">
+    <div class="stat-cell s-total"><div class="stat-n">2</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">1</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">0</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">1</div>   <div class="stat-lbl">Low</div></div>
+  </div>
+
+  <div class="s-head">Needs Attention (1)</div>
+  <div class="flag-cards">
+    <div class="flag-card">
+      <div class="fc-name">J &amp; M NIGHT MARKET  APPLE $2</div>
+      <div class="fc-addr">15 Fong Road, Auckland, Auckland, 2019, NZ</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+        <span class="tag t-mcc">MCC mismatch: 5732 &rarr; 5499 (Miscellaneous Food Stores)</span>
+        <span class="tag t-res">Residential address</span>
       </div>
-      <div class="fi-osint">OSINT: No social media presence found — zero online footprint for "IB Supermarket" in Guildford NSW across Facebook, Instagram, Waze, TikTok, and business directories.</div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted. Google Places returned only the residential street address (15 Fong Road, Flat Bush) with no business listing. No Facebook, Instagram, Waze or TikTok presence for this trading name.</div>
     </div>
   </div>
 
-  <div class="tw">
+  <div class="s-head">All Merchants</div>
+  <div class="table-wrap">
     <table>
       <thead>
         <tr>
-          <th>Legal Name</th>
           <th>Trading Name</th>
-          <th>Trading Address</th>
-          <th>Google Trading Name</th>
-          <th>Google Trading Address</th>
-          <th>Confidence Level</th>
+          <th>Address</th>
+          <th>Confidence</th>
+          <th>Address Type</th>
           <th>MCC</th>
           <th>Assumed MCC</th>
-          <th>MCC Description</th>
-          <th>Address Type</th>
           <th>MOTO</th>
-          <th>Risk Score</th>
+          <th>Risk</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="rm">
-          <td>IB SUPERMARKET PTY LTD</td>
-          <td>IB Supermarket</td>
-          <td>126 Military Road, , Guildford, NSW, 2161, AU</td>
-          <td>Guilford African Market</td>
-          <td>123 Military Rd, Guildford NSW 2161, Australia</td>
-          <td><span class="badge bl">Low</span></td>
-          <td>5411</td>
-          <td>5411</td>
-          <td>Grocery Stores / Supermarkets</td>
-          <td><span class="badge bc">Commercial</span></td>
-          <td>FALSE</td>
-          <td><strong>2</strong></td>
+        <tr class="tr-r">
+          <td>J &amp; M NIGHT MARKET  APPLE $2</td>
+          <td>15 Fong Road, Auckland, 2019, NZ</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-res">Residential</span></td>
+          <td>5732</td>
+          <td>5499 Miscellaneous Food Stores</td>
+          <td>—</td>
+          <td class="rs rs-r">4</td>
+        </tr>
+        <tr class="tr-g">
+          <td>ELEGANT CREATIONS HAIR &amp; BEAUTY Papatoetoe</td>
+          <td>1, 406 Great South Road, Auckland, 2025, NZ</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>7230</td>
+          <td>7230 Beauty and Barber Shops</td>
+          <td>—</td>
+          <td class="rs rs-g">0</td>
         </tr>
       </tbody>
     </table>
   </div>
 
+  <footer class="site-footer">
+    <span>Generated 3 Jul 2026, 10:54 PM UTC &middot; CCR automated pipeline</span>
+    <div class="footer-links">
+      <a href="https://docs.google.com/spreadsheets/d/1QUQ-Fq7JQ0wG89tMpGzeP51rPCSqiAH0vAxpqgapaGo/edit">Google Sheet &rarr;</a>
+      <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
+    </div>
+  </footer>
+
 </div>
 
-<div class="footer">
-  Generated 3 Jul 2026 11:39 AEST · CCR automated pipeline · <a href="https://docs.google.com/spreadsheets/d/17g4RgBaY3x7B8PTaAeeLLO1EUrvPNCkjcXMj-ghsf7I/edit">Open Google Sheet →</a>
-</div>
+</body>
+</html>

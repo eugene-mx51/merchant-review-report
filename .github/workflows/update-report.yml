@@ -2,8 +2,8 @@ name: Update Merchant Review Report
 
 on:
   schedule:
-    - cron: '0 23 * * *'   # 9:00 AM AEST = 23:00 UTC previous day
-  workflow_dispatch:         # Allow manual trigger
+    - cron: '10 23 * * *'  # 9:10 AM AEST = 23:10 UTC previous day
+  workflow_dispatch:
 
 jobs:
   update-report:
@@ -40,27 +40,38 @@ jobs:
           if not folders:
               raise SystemExit('CU folder not found — share it with the service account')
           folder_id = folders[0]['id']
+          print(f"CU folder ID: {folder_id}")
 
-          # Find latest merchant_review HTML file
+          # Find latest merchant_review file (no mimeType filter — handles plain HTML and Google Doc format)
           files = drive.files().list(
-              q=f"'{folder_id}' in parents and name contains 'merchant_review' and mimeType='text/html' and trashed=false",
-              orderBy='createdTime desc',
-              pageSize=1,
-              fields='files(id,name)'
+              q=f"'{folder_id}' in parents and name contains 'merchant_review' and trashed=false",
+              orderBy='modifiedTime desc',
+              pageSize=5,
+              fields='files(id,name,mimeType,modifiedTime)'
           ).execute().get('files', [])
           if not files:
-              raise SystemExit('No merchant_review HTML found in CU folder')
+              raise SystemExit('No merchant_review file found in CU folder')
 
-          print(f"Downloading: {files[0]['name']}")
-          req = drive.files().get_media(fileId=files[0]['id'])
+          for candidate in files:
+              print(f"  Found: {candidate['name']} | {candidate['mimeType']} | modified: {candidate.get('modifiedTime','?')}")
+
+          f = files[0]
+          print(f"Using: {f['name']}")
+
+          if f['mimeType'] == 'application/vnd.google-apps.document':
+              req = drive.files().export_media(fileId=f['id'], mimeType='text/html')
+          else:
+              req = drive.files().get_media(fileId=f['id'])
+
           buf = io.BytesIO()
           dl = MediaIoBaseDownload(buf, req)
           done = False
           while not done:
               _, done = dl.next_chunk()
-          with open('index.html', 'wb') as f:
-              f.write(buf.getvalue())
-          print('Saved index.html')
+          content = buf.getvalue()
+          with open('index.html', 'wb') as out:
+              out.write(content)
+          print(f"Saved index.html ({len(content)} bytes)")
           PYEOF
 
       - name: Commit and push

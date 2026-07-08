@@ -44,7 +44,7 @@ jobs:
 
           # Find latest merchant_review file (no mimeType filter — handles plain HTML and Google Doc format)
           files = drive.files().list(
-              q=f"'{folder_id}' in parents and name contains 'merchant_review_' and trashed=false",
+              q=f"'{folder_id}' in parents and name contains 'merchant_review' and mimeType='text/html' and trashed=false",
               orderBy='modifiedTime desc',
               pageSize=5,
               fields='files(id,name,mimeType,modifiedTime)'

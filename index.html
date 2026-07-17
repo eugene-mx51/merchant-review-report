@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 16 Jul 2026</title>
+<title>Merchant Review — 17 Jul 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,6 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -61,12 +62,14 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
+/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -96,6 +99,7 @@ body {
   margin-top: 5px;
 }
 
+/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -128,6 +132,7 @@ body {
   margin-top: 4px;
 }
 
+/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -146,6 +151,7 @@ body {
   background: var(--line);
 }
 
+/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -189,6 +195,7 @@ body {
   border-left: 2px solid var(--line);
 }
 
+/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -200,6 +207,7 @@ body {
   margin-bottom: 28px;
 }
 
+/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -255,6 +263,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
+/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -271,6 +280,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
+/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -282,7 +292,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">16 Jul 2026</div>
+  <div class="header-date">17 Jul 2026</div>
 </header>
 
 <div class="page">
@@ -295,12 +305,12 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
   <div class="stats-strip">
     <div class="stat-cell s-total"><div class="stat-n">4</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">2</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">2</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">3</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">1</div><div class="stat-lbl">Medium</div></div>
     <div class="stat-cell s-low">  <div class="stat-n">0</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="all-clear">&#10003; No flags raised — all merchants reviewed without issues.</div>
+  <div class="all-clear">✓ No flags raised — all merchants reviewed without issues.</div>
 
   <div class="s-head">All Merchants</div>
   <div class="table-wrap">
@@ -319,10 +329,9 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
         </tr>
       </thead>
       <tbody>
-        
         <tr class="tr-y">
-          <td>Chandigarh Professional Hair &amp; Beauty Salon Papatoetoe</td>
-          <td>24 Eric Baker Place, , Auckland, Auckland, 2025, NZ</td>
+          <td>Pakuranga Barbers</td>
+          <td>3 Aylesbury Street, , Auckland, Auckland, 2010, NZ</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>7230</td>
@@ -332,46 +341,46 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
           <td class="rs rs-y">3</td>
         </tr>
         <tr class="tr-g">
-          <td>MALISA ASIAN SHOP (MARKET STREET)</td>
-          <td>80 Market Street, , Blenheim, Marlborough Region, 7201, NZ</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5411</td>
-          <td>5411 Grocery Stores, Supermarkets</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>TOKOROA KIWI TAKEAWAYS</td>
-          <td>231 Leith Place, , Tokoroa, Waikato Region, 3420, NZ</td>
+          <td>Cafe Sana Leura</td>
+          <td>shop 5, 146 Leura Mall, Leura, NSW, 2780, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
           <td>5812 Eating Places, Restaurants</td>
           <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
+          <td>7_DAY</td>
+          <td class="rs rs-g">1</td>
         </tr>
-        <tr class="tr-r">
-          <td>THE FADE PLUG</td>
-          <td>114 Cargill Street, , Auckland, Auckland, 2110, NZ</td>
+        <tr class="tr-y">
+          <td>Basax Village Hornsby</td>
+          <td>65 Jersey Street, , Hornsby, NSW, 2077, AU</td>
           <td><span class="b b-md">Medium</span></td>
           <td><span class="b b-com">Commercial</span></td>
-          <td>7230</td>
-          <td>7230 Beauty and Barber Shops</td>
-          <td><span class="b b-moto">MOTO</span></td>
-          <td>5_DAY</td>
-          <td class="rs rs-r">4</td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-y">2</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Go Kati Mascot</td>
+          <td>1121 Botany Road, , Mascot, NSW, 2020, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-g">1</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 16 Jul 2026, 8:59 AM AEST · CCR automated pipeline</span>
+    <span>Generated 17 Jul 2026, 8:57 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1jAlOrRlthsGw4jqySf4kLm5wDSTV0y9VM9TOFdLNiOQ/edit?usp=drivesdk">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1m9U2Le14YhF8VktAoKB4_vp0q73sA8eiC4UfC3QWDzg/edit">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

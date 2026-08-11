@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 11 Aug 2026</title>
+<title>Merchant Review — 12 Aug 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -62,14 +61,12 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
-/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -99,7 +96,6 @@ body {
   margin-top: 5px;
 }
 
-/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -132,7 +128,6 @@ body {
   margin-top: 4px;
 }
 
-/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -151,7 +146,6 @@ body {
   background: var(--line);
 }
 
-/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -195,7 +189,6 @@ body {
   border-left: 2px solid var(--line);
 }
 
-/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -207,7 +200,6 @@ body {
   margin-bottom: 28px;
 }
 
-/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -263,7 +255,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
-/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -280,7 +271,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -292,60 +282,67 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">11 Aug 2026</div>
+  <div class="header-date">12 Aug 2026</div>
 </header>
 
 <div class="page">
 
   <div class="status-hero is-flagged">
-    <div class="status-num">4</div>
+    <div class="status-num">5</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 10 reviewed today</div>
+    <div class="status-sub">of 9 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">10</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">6</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">1</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">3</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">9</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">5</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">0</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">4</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="s-head">Needs Attention (4)</div>
+  <div class="s-head">Needs Attention (5)</div>
   <div class="flag-cards">
     <div class="flag-card">
-      <div class="fc-name">Mohsin Raza</div>
-      <div class="fc-addr">29 Sligar Avenue, , Hammondville, NSW, 2170, AU</div>
+      <div class="fc-name">Nahas Bros Pty Ltd</div>
+      <div class="fc-addr">68 Hunter Street, , Brassall, QLD, 4305, AU</div>
       <div class="fc-tags">
         <span class="tag t-low">Low confidence</span>
-        <span class="tag t-mcc">MCC mismatch: 4789 -> 5999 (Miscellaneous and Specialty Retail Stores)</span>
-        <span class="tag t-res">Residential address</span>
+        <span class="tag t-mcc">MCC mismatch: 5411 -&gt; 5812 (Eating Places, Restaurants)</span>
+        <span class="tag t-moto">MOTO enabled</span>
       </div>
-      <div class="fc-osint">No social media presence found for "Mohsin Raza" near Hammondville NSW — zero online footprint noted. Legal name format ("RAZA, MOHSIN") suggests a possible home-based sole trader. Public property records confirm 29 Sligar Avenue is a 4-bedroom residential house, reinforcing the Residential classification.</div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
     </div>
     <div class="flag-card">
-      <div class="fc-name">Easyway Melrose Park</div>
-      <div class="fc-addr">shop g22, 22 Lemon Tree Avenue, Melrose Park, NSW, 2114, AU</div>
+      <div class="fc-name">Marq Wines</div>
+      <div class="fc-addr">860 Commonage Road, , Yallingup, WA, 6282, AU</div>
       <div class="fc-tags">
-        <span class="tag t-mcc">MCC mismatch: 5812 -> 5499 (Miscellaneous Food Stores)</span>
+        <span class="tag t-mcc">MCC mismatch: 743 -&gt; 5921 (Package Stores - Beer, Wine, Liquor)</span>
       </div>
     </div>
     <div class="flag-card risk-amber">
-      <div class="fc-name">Sandwichchefs Innaloo</div>
-      <div class="fc-addr">Ellen Stirling Boulevard, , Innaloo, WA, 6018, AU</div>
+      <div class="fc-name">Maunga Espresso Hub</div>
+      <div class="fc-addr">27 Shaddock Street, , Auckland, Auckland, 1021, NZ</div>
       <div class="fc-tags">
         <span class="tag t-low">Low confidence</span>
-        <span class="tag t-mcc">MCC mismatch: 5812 -> 5462 (Bakeries)</span>
       </div>
-      <div class="fc-osint">No Innaloo-specific social profile found — only the unrelated national Sandwich Chefs chain accounts and other Innaloo food businesses turned up. Google Places top match ("Muffin Break Innaloo") appears to be a different business at the same complex, which explains the Low confidence score.</div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
     </div>
     <div class="flag-card risk-amber">
-      <div class="fc-name">Moala Mel</div>
-      <div class="fc-addr">2G, 398 Elizabeth Street, Melbourne, VIC, 2000, AU</div>
+      <div class="fc-name">Baekdam</div>
+      <div class="fc-addr">109, 52 Rowe Street, Eastwood, NSW, 2122, AU</div>
       <div class="fc-tags">
         <span class="tag t-low">Low confidence</span>
-        <span class="tag t-mcc">MCC mismatch: 5812 -> 5999 (Miscellaneous and Specialty Retail Stores)</span>
       </div>
-      <div class="fc-osint">No social media presence found — zero online footprint noted. Google Places top match returned "Melbourne Central" (a shopping mall, wrong postcode 3000 vs 2000), indicating the Places lookup failed to find the actual business — likely a very new or low-visibility listing.</div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
+    </div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">Onezo</div>
+      <div class="fc-addr">1, 23 Koornang Road, Carnegie, VIC, 3163, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+        <span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
+      </div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
     </div>
   </div>
 
@@ -367,74 +364,85 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
       </thead>
       <tbody>
         <tr class="tr-r">
-          <td>Mohsin Raza</td>
-          <td>29 Sligar Avenue, , Hammondville, NSW, 2170, AU</td>
+          <td>Nahas Bros Pty Ltd</td>
+          <td>68 Hunter Street, , Brassall, QLD, 4305, AU</td>
           <td><span class="b b-lo">Low</span></td>
-          <td><span class="b b-res">Residential</span></td>
-          <td>4789</td>
-          <td>5999 Miscellaneous and Specialty Retail Stores</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-r">4</td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5411</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>7_DAY</td>
+          <td class="rs rs-r">6</td>
         </tr>
         <tr class="tr-g">
-          <td>Easyway Melrose Park</td>
-          <td>shop g22, 22 Lemon Tree Avenue, Melrose Park, NSW, 2114, AU</td>
-          <td><span class="b b-md">Medium</span></td>
+          <td>IDLY SAMBAR-KINGSLAND</td>
+          <td>2, 455 New North Road, Auckland, Auckland, 1021, NZ</td>
+          <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
-          <td>5499 Miscellaneous Food Stores</td>
+          <td>5812 Eating Places, Restaurants</td>
           <td>—</td>
           <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Ivy Clinic</td>
+          <td>10 Munro Road, , Queenstown, Otago Region, 9300, NZ</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>8011</td>
+          <td>8011 Doctors and Physicians</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Marq Wines</td>
+          <td>860 Commonage Road, , Yallingup, WA, 6282, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>743</td>
+          <td>5921 Package Stores - Beer, Wine, Liquor</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>SUSHI SORA</td>
+          <td>13 Robertson Road, , Newport, NSW, 2106, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>7_DAY</td>
           <td class="rs rs-g">1</td>
         </tr>
-        <tr class="tr-g">
-          <td>Toptea Doncaster</td>
-          <td>k110b, 619 Doncaster Road, Doncaster, VIC, 3108, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Tea White Box Hill</td>
-          <td>1 Main Street, , Box Hill, VIC, 3128, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
         <tr class="tr-y">
-          <td>Sandwichchefs Innaloo</td>
-          <td>Ellen Stirling Boulevard, , Innaloo, WA, 6018, AU</td>
+          <td>Maunga Espresso Hub</td>
+          <td>27 Shaddock Street, , Auckland, Auckland, 1021, NZ</td>
           <td><span class="b b-lo">Low</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
-          <td>5462 Bakeries</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">2</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Baekdam</td>
+          <td>109, 52 Rowe Street, Eastwood, NSW, 2122, AU</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
           <td>—</td>
           <td>7_DAY</td>
           <td class="rs rs-y">3</td>
         </tr>
-        <tr class="tr-g">
-          <td>Meet Fresh Darling Square</td>
-          <td>5, 7 Little Pier Street, Haymarket, NSW, 2000, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
         <tr class="tr-y">
-          <td>Moala Mel</td>
-          <td>2G, 398 Elizabeth Street, Melbourne, VIC, 2000, AU</td>
+          <td>Onezo</td>
+          <td>1, 23 Koornang Road, Carnegie, VIC, 3163, AU</td>
           <td><span class="b b-lo">Low</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
@@ -444,30 +452,8 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
           <td class="rs rs-y">2</td>
         </tr>
         <tr class="tr-g">
-          <td>Teaser Warrnambool</td>
-          <td>97 Liebig Street, , Warrnambool, VIC, 3280, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Golden Carriage Korean Fried Chicken</td>
-          <td>Fifth Avenue, , Marsden, QLD, , AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>7_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Meet Fresh Burwood</td>
-          <td>11 Wynne Avenue, , Burwood, NSW, 2134, AU</td>
+          <td>Nar Bangkok Restaurant</td>
+          <td>shop 2, 391 Saint Kilda Road, Melbourne, VIC, 3004, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
@@ -481,9 +467,9 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
   </div>
 
   <footer class="site-footer">
-    <span>Generated 11 Aug 2026, 8:56 AM AEST · CCR automated pipeline</span>
+    <span>Generated 12 Aug 2026, 8:55 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1p8t4VMG3VCRctIBXjNOExld2oPp4-EdRv06-vCbXbq8/edit">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1ZlFaswCeMZ5EYDs2G6XRRzODK6IDiTxx7c9usJAH7nE/edit?usp=drivesdk&ouid=112374384952331404059">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 19 Aug 2026</title>
+<title>Merchant Review — 20 Aug 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -62,14 +61,12 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
-/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -99,7 +96,6 @@ body {
   margin-top: 5px;
 }
 
-/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -132,7 +128,6 @@ body {
   margin-top: 4px;
 }
 
-/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -151,7 +146,6 @@ body {
   background: var(--line);
 }
 
-/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -195,7 +189,6 @@ body {
   border-left: 2px solid var(--line);
 }
 
-/* ── ALL-CLEAR CALLOUT ─────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -207,7 +200,6 @@ body {
   margin-bottom: 28px;
 }
 
-/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -263,7 +255,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
-/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -280,7 +271,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -292,51 +282,59 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">19 Aug 2026</div>
+  <div class="header-date">20 Aug 2026</div>
 </header>
 
 <div class="page">
 
   <div class="status-hero is-flagged">
-    <div class="status-num">3</div>
+    <div class="status-num">4</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 10 reviewed today</div>
+    <div class="status-sub">of 15 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">10</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">6</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">15</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">10</div>  <div class="stat-lbl">High</div></div>
     <div class="stat-cell s-med">  <div class="stat-n">1</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">3</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">4</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="s-head">Needs Attention (3)</div>
+  <div class="s-head">Needs Attention (4)</div>
   <div class="flag-cards">
-    <div class="flag-card">
-      <div class="fc-name">CASA DI MIELE</div>
-      <div class="fc-addr">25 Grant Close, , Kemps Creek, NSW, 2178, AU</div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">Maunga Espresso Hub</div>
+      <div class="fc-addr">27 Shaddock Street, , Auckland, Auckland, 1021, NZ</div>
       <div class="fc-tags">
         <span class="tag t-low">Low confidence</span>
-        <span class="tag t-mcc">MCC mismatch: 5411 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
+      </div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
+    </div>
+    <div class="flag-card">
+      <div class="fc-name">Omme Cafe</div>
+      <div class="fc-addr">48 Mandurah Terrace, , Mandurah, WA, 6210, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+        <span class="tag t-moto">MOTO enabled</span>
+      </div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
+    </div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">Auntie Anne's Newmarket</div>
+      <div class="fc-addr">s301, 309 Broadway, Auckland, Auckland, 1023, NZ</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+      </div>
+      <div class="fc-osint">Found listing 'Auntie Anne's (Opening Soon)' at Westfield Newmarket, Broadway, Auckland — matches trading suburb/address</div>
+    </div>
+    <div class="flag-card">
+      <div class="fc-name">Luma Beauty</div>
+      <div class="fc-addr">2 Railway Parade, , Eastwood, NSW, 2122, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
         <span class="tag t-res">Residential address</span>
       </div>
-      <div class="fc-osint">No social media presence found — zero online footprint noted. Legal name is a personal name (VUMBACA, FRANCESCA) — possible home-based sole trader.</div>
-    </div>
-    <div class="flag-card risk-amber">
-      <div class="fc-name">Thaithae Melrose Central</div>
-      <div class="fc-addr">22 Lemon Tree Avenue, , Melrose Park, NSW, 2114, AU</div>
-      <div class="fc-tags">
-        <span class="tag t-low">Low confidence</span>
-      </div>
-      <div class="fc-osint">No social media presence found — zero online footprint noted.</div>
-    </div>
-    <div class="flag-card risk-amber">
-      <div class="fc-name">Big Bone Pho 金记</div>
-      <div class="fc-addr">295 Elizabeth Street, , Melbourne, VIC, 3000, AU</div>
-      <div class="fc-tags">
-        <span class="tag t-low">Low confidence</span>
-      </div>
-      <div class="fc-osint">No social media presence found — zero online footprint noted (only match found was for a different suburb, Glen Waverley — discarded).</div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
     </div>
   </div>
 
@@ -357,31 +355,9 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
         </tr>
       </thead>
       <tbody>
-        <tr class="tr-r">
-          <td>CASA DI MIELE</td>
-          <td>25 Grant Close, , Kemps Creek, NSW, 2178, AU</td>
-          <td><span class="b b-lo">Low</span></td>
-          <td><span class="b b-res">Residential</span></td>
-          <td>5411</td>
-          <td>5999 Miscellaneous and Specialty Retail Stores</td>
-          <td>—</td>
-          <td>7_DAY</td>
-          <td class="rs rs-r">5</td>
-        </tr>
-        <tr class="tr-r">
-          <td>Ranjit Jewellers</td>
-          <td>246-248 High Street, , Melton, VIC, 3337, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5944</td>
-          <td>5944 Jewelry Stores</td>
-          <td><span class="b b-moto">MOTO</span></td>
-          <td>7_DAY</td>
-          <td class="rs rs-r">4</td>
-        </tr>
         <tr class="tr-y">
-          <td>Thaithae Melrose Central</td>
-          <td>22 Lemon Tree Avenue, , Melrose Park, NSW, 2114, AU</td>
+          <td>Maunga Espresso Hub</td>
+          <td>27 Shaddock Street, , Auckland, Auckland, 1021, NZ</td>
           <td><span class="b b-lo">Low</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
@@ -391,19 +367,8 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
           <td class="rs rs-y">2</td>
         </tr>
         <tr class="tr-g">
-          <td>Great Asia World</td>
-          <td>200 City Road, , Southbank, VIC, 3006, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5411</td>
-          <td>5411 Grocery Stores, Supermarkets</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Thaithae Pagewood</td>
-          <td>11 Studio Drive, , Eastgardens, NSW, 2036, AU</td>
+          <td>Easyway Macquarie Centre</td>
+          <td>49 Waterloo Road, , North Ryde, NSW, 2113, AU</td>
           <td><span class="b b-md">Medium</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
@@ -412,42 +377,42 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
           <td>5_DAY</td>
           <td class="rs rs-g">1</td>
         </tr>
-        <tr class="tr-y">
-          <td>Big Bone Pho 金记</td>
-          <td>295 Elizabeth Street, , Melbourne, VIC, 3000, AU</td>
+        <tr class="tr-g">
+          <td>Teaser Polaris</td>
+          <td>Shop 8A, 1056 Plenty Road, Bundoora , VIC, 3083, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-r">
+          <td>Omme Cafe</td>
+          <td>48 Mandurah Terrace, , Mandurah, WA, 6210, AU</td>
           <td><span class="b b-lo">Low</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
           <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
+          <td><span class="b b-moto">MOTO</span></td>
           <td>5_DAY</td>
-          <td class="rs rs-y">2</td>
+          <td class="rs rs-r">5</td>
         </tr>
-        <tr class="tr-g">
-          <td>Lokanta Turkish Kebab Cafe</td>
-          <td>128 Kapiti Road, , Paraparaumu Beach, Wellington Region, 5032, NZ</td>
+        <tr class="tr-y">
+          <td>Skola</td>
+          <td>57 Eastern Road, , Browns Plains, QLD, 4118, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
+          <td>5699</td>
+          <td>5691 Men's and Women's Clothing Stores</td>
+          <td><span class="b b-moto">MOTO</span></td>
           <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
+          <td class="rs rs-y">3</td>
         </tr>
         <tr class="tr-g">
-          <td>ROYAL PUNJABI TANDOORI INDIAN BAR &amp; RESTAURENT</td>
-          <td>137 East Street, , Rockhampton City, QLD, 4700, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>By Moss</td>
-          <td>829-833 Burke Road, , Camberwell, VIC, 3124, AU</td>
+          <td>Hot Hot Hot Malatang</td>
+          <td>42 Church Avenue, , Mascot, NSW, 2020, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
@@ -457,12 +422,100 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
           <td class="rs rs-g">0</td>
         </tr>
         <tr class="tr-y">
-          <td>POS Technology</td>
-          <td>43, 70 Kingsford Smith Street, Wellington, Wellington Region, 6022, NZ</td>
+          <td>Dougies Grill</td>
+          <td>24 Restwell Street, , Bankstown, NSW, 2200, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
-          <td>5732</td>
-          <td>5732 Electronics Sales</td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">3</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Meet Fresh Waterloo</td>
+          <td>17 Lachlan Street, , Waterloo, NSW, 2017, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Kingway Malatang</td>
+          <td>shop 1a, 722 George Street, Haymarket, NSW, 2000, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Happy Fried Skewers</td>
+          <td>shop 4, 260 Coward Street, Mascot, NSW, 2020, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Xee La</td>
+          <td>886 Albany Highway, , East Victoria Park, WA, 6101, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-r">
+          <td>SAANJH INDIAN RESTAURANT</td>
+          <td>1, 40 Station Street, Bayswater, VIC, 3153, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>7_DAY</td>
+          <td class="rs rs-r">4</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Auntie Anne's Newmarket</td>
+          <td>s301, 309 Broadway, Auckland, Auckland, 1023, NZ</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5814 Fast Food Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">2</td>
+        </tr>
+        <tr class="tr-r">
+          <td>Luma Beauty</td>
+          <td>2 Railway Parade, , Eastwood, NSW, 2122, AU</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-res">Residential</span></td>
+          <td>7230</td>
+          <td>7230 Beauty and Barber Shops</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-r">5</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Kawungan Quality Meats</td>
+          <td>6, 1 Doolong Road, Kawungan, QLD, 4655, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5422</td>
+          <td>5422 Freezer and Locker Meat Provisioners</td>
           <td><span class="b b-moto">MOTO</span></td>
           <td>5_DAY</td>
           <td class="rs rs-y">3</td>
@@ -472,9 +525,9 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
   </div>
 
   <footer class="site-footer">
-    <span>Generated 19 Aug 2026, 8:57 AM AEST · CCR automated pipeline</span>
+    <span>Generated 20 Aug 2026, 9:00 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1kmcZe5SubLu6rAjstdMaHMOdPXmwBpg1CE-BPjp-Ips/edit?usp=drivesdk&ouid=112374384952331404059">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1slKd4EbPKUkv-T5yDfuKyjNI8W6UhdrFcgaqpT12K_8/edit">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

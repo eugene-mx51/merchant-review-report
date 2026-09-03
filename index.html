@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 03 Sep 2026</title>
+<title>Merchant Review — 04 Sep 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -62,14 +61,12 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
-/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -99,7 +96,6 @@ body {
   margin-top: 5px;
 }
 
-/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -132,7 +128,6 @@ body {
   margin-top: 4px;
 }
 
-/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -151,7 +146,6 @@ body {
   background: var(--line);
 }
 
-/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -195,7 +189,6 @@ body {
   border-left: 2px solid var(--line);
 }
 
-/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -207,7 +200,6 @@ body {
   margin-bottom: 28px;
 }
 
-/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -263,7 +255,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
-/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -280,7 +271,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -292,102 +282,53 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">03 Sep 2026</div>
+  <div class="header-date">04 Sep 2026</div>
 </header>
 
 <div class="page">
 
   <div class="status-hero is-flagged">
-    <div class="status-num">10</div>
+    <div class="status-num">3</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 23 reviewed today</div>
+    <div class="status-sub">of 11 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">23</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">11</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">7</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">5</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">11</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">8</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">2</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">1</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="s-head">Needs Attention (10)</div>
-<div class="flag-cards">
-  <div class="flag-card risk-amber">
-    <div class="fc-name">T4 Canning Vale</div>
-    <div class="fc-addr">271 Amherst Road, , Canning Vale, WA, 6155, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-low">Low confidence</span><span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
+  <div class="s-head">Needs Attention (3)</div>
+  <div class="flag-cards">
+    <div class="flag-card">
+      <div class="fc-name">Fitzy's Fresh Seafood</div>
+      <div class="fc-addr">2, 13 Kuring Gai Avenue, Tarragindi, QLD, 4121, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-mcc">MCC mismatch: 5499 -> 5999 (Miscellaneous and Specialty Retail Stores)</span>
+        <span class="tag t-moto">MOTO enabled</span>
+      </div>
     </div>
-    <div class="fc-osint">Found Facebook &amp; Instagram page 'T4 Canning Vale' and TikTok content in Canning Vale WA — confirmed active bubble tea chain location</div>
-  </div>
-  <div class="flag-card">
-    <div class="fc-name">Grab n go darwin</div>
-    <div class="fc-addr">44 Mitchell Street, , Darwin City, NT, 0800, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-mcc">MCC mismatch: 5947 -&gt; 5499 (Miscellaneous Food Stores)</span>
+    <div class="flag-card">
+      <div class="fc-name">The Low Key Bar</div>
+      <div class="fc-addr">11 Tory Street, , Wellington, Wellington Region, 6011, NZ</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+        <span class="tag t-mcc">MCC mismatch: 5812 -> 5813 (Drinking Places, Bars)</span>
+        <span class="tag t-moto">MOTO enabled</span>
+      </div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
     </div>
-  </div>
-  <div class="flag-card">
-    <div class="fc-name">Easyway Parramatta</div>
-    <div class="fc-addr">159-175 Church Street, , Parramatta, NSW, 2150, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
-    </div>
-  </div>
-  <div class="flag-card">
-    <div class="fc-name">BNK Tyres</div>
-    <div class="fc-addr">2, 1 McKenzie Place, Yarrawonga, NT, 0830, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-mcc">MCC mismatch: 5533 -&gt; 7538 (Automotive Service Shops)</span>
+    <div class="flag-card">
+      <div class="fc-name">The Barrington</div>
+      <div class="fc-addr">10 Smith Street, , Parramatta, NSW, 2150, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-mcc">MCC mismatch: 5812 -> 5999 (Miscellaneous and Specialty Retail Stores)</span>
+        <span class="tag t-moto">MOTO enabled</span>
+      </div>
     </div>
   </div>
-  <div class="flag-card">
-    <div class="fc-name">BOK Bakery of Korea</div>
-    <div class="fc-addr">10 Parsons Avenue, , Springvale, VIC, 3171, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5462 (Bakeries)</span>
-    </div>
-  </div>
-  <div class="flag-card risk-amber">
-    <div class="fc-name">HUEPAY SOLUTION PTY LTD</div>
-    <div class="fc-addr">328, 627 Chapel Street, South Yarra, VIC, 3141, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-low">Low confidence</span><span class="tag t-mcc">MCC mismatch: 4829 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
-    </div>
-    <div class="fc-osint">No direct social media match — but verified as HuePay, an Australian fintech (Huifu Payment subsidiary) operating in the Chapel St, South Yarra commercial precinct</div>
-  </div>
-  <div class="flag-card">
-    <div class="fc-name">lavington meat and seafood</div>
-    <div class="fc-addr">1094 Mate Street, , North Albury, NSW, 2640, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-mcc">MCC mismatch: 5422 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
-    </div>
-  </div>
-  <div class="flag-card risk-amber">
-    <div class="fc-name">Koz Kebab &amp; Grill House</div>
-    <div class="fc-addr">2B Forum Way, , Epping, VIC, 3076, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-low">Low confidence</span>
-    </div>
-    <div class="fc-osint">No matching social media presence found — other unrelated kebab businesses found in Epping VIC, none matching this trading name</div>
-  </div>
-  <div class="flag-card risk-amber">
-    <div class="fc-name">Yangeuninae Eastwood</div>
-    <div class="fc-addr">51 Rowe Street, , Eastwood, NSW, 2122, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-low">Low confidence</span>
-    </div>
-    <div class="fc-osint">No matching social media presence found — a same-brand 'Yangeuninae' location was found but in Lidcombe NSW, a different suburb; discarded as non-match</div>
-  </div>
-  <div class="flag-card risk-amber">
-    <div class="fc-name">18 Grams</div>
-    <div class="fc-addr">kiosk 206 , 159-175 Church Street, Parramatta, NSW, 2150, AU</div>
-    <div class="fc-tags">
-      <span class="tag t-low">Low confidence</span><span class="tag t-mcc">MCC mismatch: 5462 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
-    </div>
-    <div class="fc-osint">No matching social media presence found — unrelated '18 Grams Cafe' locations found in other Sydney suburbs (Hurstville, Kogarah, Penrith), none in Parramatta</div>
-  </div>
-</div>
 
   <div class="s-head">All Merchants</div>
   <div class="table-wrap">
@@ -406,267 +347,135 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
         </tr>
       </thead>
       <tbody>
+        <tr class="tr-g">
+          <td>Again coffee</td>
+          <td>6 Import Lane, , Docklands, VIC, 3008, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Velvet Bean Airport West</td>
+          <td>29-35 Louis Street, , Airport West, VIC, 3042, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Coffee Brothers</td>
+          <td>54 56, 1 Darley Street, Mona Vale, NSW, 2103, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>JJs Asian grocer</td>
+          <td>1074 Mate Street, , Lavington, NSW, 2641, AU</td>
+          <td><span class="b b-md">Medium</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5411</td>
+          <td>5411 Grocery Stores, Supermarkets</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">1</td>
+        </tr>
+        <tr class="tr-r">
+          <td>Fitzy's Fresh Seafood</td>
+          <td>2, 13 Kuring Gai Avenue, Tarragindi, QLD, 4121, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5499</td>
+          <td>5999 Miscellaneous and Specialty Retail Stores</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>7_DAY</td>
+          <td class="rs rs-r">4</td>
+        </tr>
+        <tr class="tr-r">
+          <td>The Low Key Bar</td>
+          <td>11 Tory Street, , Wellington, Wellington Region, 6011, NZ</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5813 Drinking Places, Bars</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>5_DAY</td>
+          <td class="rs rs-r">5</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Jaggi Curry Hut (Lyndhurst)</td>
+          <td>19A, 10-18 Society Avenue, Lyndhurst , VIC, 3975, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-g">1</td>
+        </tr>
+        <tr class="tr-g">
+          <td>alibaba kebab and pizza</td>
+          <td>200 Beechworth Road, , Wodonga, VIC, 3690, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-g">1</td>
+        </tr>
         <tr class="tr-y">
-  <td>Lets Get Roasted and Toasted</td>
-  <td>1, 59 Gateway Drive, Noosaville, QLD, 4566, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td><span class="b b-moto">MOTO</span></td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">3</td>
-</tr>
-<tr class="tr-y">
-  <td>T4 Canning Vale</td>
-  <td>271 Amherst Road, , Canning Vale, WA, 6155, AU</td>
-  <td><span class="b b-lo">Low</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5999 Miscellaneous and Specialty Retail Stores</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">2</td>
-</tr>
-<tr class="tr-r">
-  <td>Vanilla Pod Cafe</td>
-  <td>170 Canterbury Road, , Heathmont, VIC, 3135, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td><span class="b b-moto">MOTO</span></td>
-  <td>7_DAY</td>
-  <td class="rs rs-r">4</td>
-</tr>
-<tr class="tr-g">
-  <td>Grab n go darwin</td>
-  <td>44 Mitchell Street, , Darwin City, NT, 0800, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5947</td>
-  <td>5499 Miscellaneous Food Stores</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">0</td>
-</tr>
-<tr class="tr-g">
-  <td>Easyway Parramatta</td>
-  <td>159-175 Church Street, , Parramatta, NSW, 2150, AU</td>
-  <td><span class="b b-md">Medium</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5999 Miscellaneous and Specialty Retail Stores</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">1</td>
-</tr>
-<tr class="tr-g">
-  <td>BNK Tyres</td>
-  <td>2, 1 McKenzie Place, Yarrawonga, NT, 0830, AU</td>
-  <td><span class="b b-md">Medium</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5533</td>
-  <td>7538 Automotive Service Shops</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">1</td>
-</tr>
-<tr class="tr-g">
-  <td>BOK Bakery of Korea</td>
-  <td>10 Parsons Avenue, , Springvale, VIC, 3171, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5462 Bakeries</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">0</td>
-</tr>
-<tr class="tr-g">
-  <td>IKI Sushi &amp; Grill</td>
-  <td>462 Chapel Road, , Bankstown, NSW, 2200, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>7_DAY</td>
-  <td class="rs rs-g">1</td>
-</tr>
-<tr class="tr-g">
-  <td>Nori Table Paddington</td>
-  <td>388 Oxford Street, , Paddington, NSW, 2021, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>7_DAY</td>
-  <td class="rs rs-g">1</td>
-</tr>
-<tr class="tr-y">
-  <td>HUEPAY SOLUTION PTY LTD</td>
-  <td>328, 627 Chapel Street, South Yarra, VIC, 3141, AU</td>
-  <td><span class="b b-lo">Low</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>4829</td>
-  <td>5999 Miscellaneous and Specialty Retail Stores</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">2</td>
-</tr>
-<tr class="tr-g">
-  <td>Dotori Fresh Sushi Roll</td>
-  <td>24 Joseph Street, , Lidcombe, NSW, 2141, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">0</td>
-</tr>
-<tr class="tr-g">
-  <td>lavington meat and seafood</td>
-  <td>1094 Mate Street, , North Albury, NSW, 2640, AU</td>
-  <td><span class="b b-md">Medium</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5422</td>
-  <td>5999 Miscellaneous and Specialty Retail Stores</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">1</td>
-</tr>
-<tr class="tr-y">
-  <td>Koz Kebab &amp; Grill House</td>
-  <td>2B Forum Way, , Epping, VIC, 3076, AU</td>
-  <td><span class="b b-lo">Low</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">2</td>
-</tr>
-<tr class="tr-y">
-  <td>Sunshine Beach SLSC</td>
-  <td>Cnr Duke and Belmore Street, , Sunshine Beach, QLD, 4567, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td><span class="b b-moto">MOTO</span></td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">3</td>
-</tr>
-<tr class="tr-g">
-  <td>Fortune House Wantirna South</td>
-  <td>382 Burwood Highway, , Wantirna South, VIC, 3152, AU</td>
-  <td><span class="b b-md">Medium</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">1</td>
-</tr>
-<tr class="tr-g">
-  <td>Cafe Markus</td>
-  <td>3-9 Spring Street, , Chatswood, NSW, 2067, AU</td>
-  <td><span class="b b-md">Medium</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">1</td>
-</tr>
-<tr class="tr-y">
-  <td>Yangeuninae Eastwood</td>
-  <td>51 Rowe Street, , Eastwood, NSW, 2122, AU</td>
-  <td><span class="b b-lo">Low</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">2</td>
-</tr>
-<tr class="tr-y">
-  <td>Guneet's Indian Restaurant</td>
-  <td>2, 250 High Street, Melton, VIC, 3337, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td><span class="b b-moto">MOTO</span></td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">3</td>
-</tr>
-<tr class="tr-y">
-  <td>18 Grams</td>
-  <td>kiosk 206 , 159-175 Church Street, Parramatta, NSW, 2150, AU</td>
-  <td><span class="b b-lo">Low</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5462</td>
-  <td>5999 Miscellaneous and Specialty Retail Stores</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">2</td>
-</tr>
-<tr class="tr-y">
-  <td>Hidden Grind &amp; Co</td>
-  <td>353 Guildford Road, , Guildford, NSW, 2161, AU</td>
-  <td><span class="b b-md">Medium</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>7_DAY</td>
-  <td class="rs rs-y">2</td>
-</tr>
-<tr class="tr-g">
-  <td>Sushiru</td>
-  <td>20-30 Blamey Street, , Revesby, NSW, 2212, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td>—</td>
-  <td>5_DAY</td>
-  <td class="rs rs-g">0</td>
-</tr>
-<tr class="tr-y">
-  <td>Awaken Cafe</td>
-  <td>unit 1, 275 Boundary Street, Coolangatta, QLD, 4225, AU</td>
-  <td><span class="b b-hi">High</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td><span class="b b-moto">MOTO</span></td>
-  <td>5_DAY</td>
-  <td class="rs rs-y">3</td>
-</tr>
-<tr class="tr-r">
-  <td>Raja Sweets</td>
-  <td>11 Staughton Street, , Melton South, VIC, 3338, AU</td>
-  <td><span class="b b-md">Medium</span></td>
-  <td><span class="b b-com">Commercial</span></td>
-  <td>5812</td>
-  <td>5812 Eating Places, Restaurants</td>
-  <td><span class="b b-moto">MOTO</span></td>
-  <td>5_DAY</td>
-  <td class="rs rs-r">4</td>
-</tr>
+          <td>The Sparrow's Mill</td>
+          <td>3, 116 Liverpool Street, Ingleburn, NSW, 2565, AU</td>
+          <td><span class="b b-md">Medium</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-y">2</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Chicken Time Norwood</td>
+          <td>65 The Parade, , Norwood, SA, 5067, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">3</td>
+        </tr>
+        <tr class="tr-r">
+          <td>The Barrington</td>
+          <td>10 Smith Street, , Parramatta, NSW, 2150, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5999 Miscellaneous and Specialty Retail Stores</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>7_DAY</td>
+          <td class="rs rs-r">4</td>
+        </tr>
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 03 Sep 2026, 8:57 AM AEST · CCR automated pipeline</span>
+    <span>Generated 04 Sep 2026, 8:55 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1-1P1CSf1IGnasmjH40TdZKbeu8OnYf8TFL4pL8rYFiM/edit?usp=drivesdk">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1XY9QhZDrhHI9t41K5FZEQcq7Awk5jegwOjSOwOhf1c0/edit?usp=drivesdk">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

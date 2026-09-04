@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 04 Sep 2026</title>
+<title>Merchant Review — 5 Sep 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,6 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -61,12 +62,14 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
+/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -96,6 +99,7 @@ body {
   margin-top: 5px;
 }
 
+/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -128,6 +132,7 @@ body {
   margin-top: 4px;
 }
 
+/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -146,6 +151,7 @@ body {
   background: var(--line);
 }
 
+/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -189,6 +195,7 @@ body {
   border-left: 2px solid var(--line);
 }
 
+/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -200,6 +207,7 @@ body {
   margin-bottom: 28px;
 }
 
+/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -255,6 +263,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
+/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -271,6 +280,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
+/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -282,51 +292,74 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">04 Sep 2026</div>
+  <div class="header-date">5 Sep 2026</div>
 </header>
 
 <div class="page">
 
   <div class="status-hero is-flagged">
-    <div class="status-num">3</div>
+    <div class="status-num">6</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 11 reviewed today</div>
+    <div class="status-sub">of 15 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">11</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">8</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">2</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">1</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">15</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">7</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">3</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">5</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="s-head">Needs Attention (3)</div>
+  <div class="s-head">Needs Attention (6)</div>
   <div class="flag-cards">
-    <div class="flag-card">
-      <div class="fc-name">Fitzy's Fresh Seafood</div>
-      <div class="fc-addr">2, 13 Kuring Gai Avenue, Tarragindi, QLD, 4121, AU</div>
-      <div class="fc-tags">
-        <span class="tag t-mcc">MCC mismatch: 5499 -> 5999 (Miscellaneous and Specialty Retail Stores)</span>
-        <span class="tag t-moto">MOTO enabled</span>
-      </div>
-    </div>
-    <div class="flag-card">
-      <div class="fc-name">The Low Key Bar</div>
-      <div class="fc-addr">11 Tory Street, , Wellington, Wellington Region, 6011, NZ</div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">VELORA GIFTS PTY LTD</div>
+      <div class="fc-addr">1, 52 Gymea Bay Road, Gymea, NSW, 2227, AU</div>
       <div class="fc-tags">
         <span class="tag t-low">Low confidence</span>
-        <span class="tag t-mcc">MCC mismatch: 5812 -> 5813 (Drinking Places, Bars)</span>
-        <span class="tag t-moto">MOTO enabled</span>
+        <span class="tag t-mcc">MCC mismatch: 5411 -> 5719 (Miscellaneous Home Furnishings)</span>
       </div>
       <div class="fc-osint">No social media presence found — zero online footprint noted</div>
     </div>
     <div class="flag-card">
-      <div class="fc-name">The Barrington</div>
-      <div class="fc-addr">10 Smith Street, , Parramatta, NSW, 2150, AU</div>
+      <div class="fc-name">Caltex Ararat</div>
+      <div class="fc-addr">3 Lambert Street, , Ararat, VIC, 3377, AU</div>
       <div class="fc-tags">
-        <span class="tag t-mcc">MCC mismatch: 5812 -> 5999 (Miscellaneous and Specialty Retail Stores)</span>
-        <span class="tag t-moto">MOTO enabled</span>
+        <span class="tag t-mcc">MCC mismatch: 5533 -> 5541 (Service Stations / Petrol Stations)</span>
       </div>
+    </div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">BEN GROCERY WHOLE SELLER PTY LTD</div>
+      <div class="fc-addr">100 Fitzgerald Street East, , Northam, WA, 6401, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+      </div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
+    </div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">Hanok Box Hill</div>
+      <div class="fc-addr">519-521 Station Street, , Box Hill, VIC, 3128, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+      </div>
+      <div class="fc-osint">No social media presence found for "Hanok" in Box Hill VIC — other Hanok Korean BBQ locations exist in Canberra, but not this address. Address confirmed commercial: part of the Sky Square (SKY SQR) retail/food precinct, with a Bendigo Bank branch at the same address.</div>
+    </div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">Moala</div>
+      <div class="fc-addr">lot 2, 85 A'Beckett Street, Melbourne, VIC, 3000, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+      </div>
+      <div class="fc-osint">Found Instagram/Facebook profile "moalayogurt" — a MOALA frozen yogurt store opening in Melbourne, VIC — matches trading name and location. Address type remains Unknown; no clear retail-directory evidence for 85 A'Beckett Street (mixed commercial/residential building).</div>
+    </div>
+    <div class="flag-card risk-amber">
+      <div class="fc-name">Echuca Convenience Store</div>
+      <div class="fc-addr">5A, 24  Nish Street, Echuca, VIC, 3564, AU</div>
+      <div class="fc-tags">
+        <span class="tag t-low">Low confidence</span>
+        <span class="tag t-mcc">MCC mismatch: 5411 -> 5499 (Miscellaneous Food Stores)</span>
+      </div>
+      <div class="fc-osint">No social media presence found — zero online footprint noted</div>
     </div>
   </div>
 
@@ -348,85 +381,8 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
       </thead>
       <tbody>
         <tr class="tr-g">
-          <td>Again coffee</td>
-          <td>6 Import Lane, , Docklands, VIC, 3008, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Velvet Bean Airport West</td>
-          <td>29-35 Louis Street, , Airport West, VIC, 3042, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Coffee Brothers</td>
-          <td>54 56, 1 Darley Street, Mona Vale, NSW, 2103, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>JJs Asian grocer</td>
-          <td>1074 Mate Street, , Lavington, NSW, 2641, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5411</td>
-          <td>5411 Grocery Stores, Supermarkets</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-r">
-          <td>Fitzy's Fresh Seafood</td>
-          <td>2, 13 Kuring Gai Avenue, Tarragindi, QLD, 4121, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5499</td>
-          <td>5999 Miscellaneous and Specialty Retail Stores</td>
-          <td><span class="b b-moto">MOTO</span></td>
-          <td>7_DAY</td>
-          <td class="rs rs-r">4</td>
-        </tr>
-        <tr class="tr-r">
-          <td>The Low Key Bar</td>
-          <td>11 Tory Street, , Wellington, Wellington Region, 6011, NZ</td>
-          <td><span class="b b-lo">Low</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5813 Drinking Places, Bars</td>
-          <td><span class="b b-moto">MOTO</span></td>
-          <td>5_DAY</td>
-          <td class="rs rs-r">5</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Jaggi Curry Hut (Lyndhurst)</td>
-          <td>19A, 10-18 Society Avenue, Lyndhurst , VIC, 3975, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>7_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>alibaba kebab and pizza</td>
-          <td>200 Beechworth Road, , Wodonga, VIC, 3690, AU</td>
+          <td>Park Bong Sook Lidcombe</td>
+          <td>48 Joseph Street, , Lidcombe, NSW, 2141, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
@@ -436,8 +392,30 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
           <td class="rs rs-g">1</td>
         </tr>
         <tr class="tr-y">
-          <td>The Sparrow's Mill</td>
-          <td>3, 116 Liverpool Street, Ingleburn, NSW, 2565, AU</td>
+          <td>VELORA GIFTS PTY LTD</td>
+          <td>1, 52 Gymea Bay Road, Gymea, NSW, 2227, AU</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5411</td>
+          <td>5719 Miscellaneous Home Furnishings</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-y">3</td>
+        </tr>
+        <tr class="tr-g">
+          <td>J Panda Eatery Perth</td>
+          <td>t5, 1 The Esplanade, Perth, WA, 6000, AU</td>
+          <td><span class="b b-md">Medium</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">1</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Satang Thai Infinity</td>
+          <td>15, 91 Liverpool Street, Ingleburn, NSW, 2565, AU</td>
           <td><span class="b b-md">Medium</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
@@ -446,36 +424,135 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
           <td>7_DAY</td>
           <td class="rs rs-y">2</td>
         </tr>
-        <tr class="tr-y">
-          <td>Chicken Time Norwood</td>
-          <td>65 The Parade, , Norwood, SA, 5067, AU</td>
+        <tr class="tr-g">
+          <td>Caltex Ararat</td>
+          <td>3 Lambert Street, , Ararat, VIC, 3377, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5533</td>
+          <td>5541 Service Stations / Petrol Stations</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Liquor Legends Bentleigh</td>
+          <td>512 Centre Road, , Bentleigh, VIC, 3204, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5921</td>
+          <td>5921 Package Stores - Beer, Wine, Liquor</td>
+          <td>—</td>
+          <td>7_DAY</td>
+          <td class="rs rs-g">1</td>
+        </tr>
+        <tr class="tr-g">
+          <td>BBQtown Dickson</td>
+          <td>6, 28 Challis Street, Dickson, ACT, 2602, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
           <td>5812 Eating Places, Restaurants</td>
-          <td><span class="b b-moto">MOTO</span></td>
+          <td>—</td>
           <td>5_DAY</td>
-          <td class="rs rs-y">3</td>
+          <td class="rs rs-g">0</td>
         </tr>
-        <tr class="tr-r">
-          <td>The Barrington</td>
-          <td>10 Smith Street, , Parramatta, NSW, 2150, AU</td>
+        <tr class="tr-g">
+          <td>Asako Japanese Restaurant</td>
+          <td>Shop 4, 100 Tennyson Road, Mortlake, NSW, 2137, AU</td>
           <td><span class="b b-hi">High</span></td>
           <td><span class="b b-com">Commercial</span></td>
           <td>5812</td>
-          <td>5999 Miscellaneous and Specialty Retail Stores</td>
-          <td><span class="b b-moto">MOTO</span></td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Senario Castle Hill</td>
+          <td>1, K2202 Castle Tower, 14/6  Castle Street, Castle Hill, NSW, 2154, AU</td>
+          <td><span class="b b-md">Medium</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">1</td>
+        </tr>
+        <tr class="tr-g">
+          <td>Jokbal King Bentleigh</td>
+          <td>635 Centre Road, , Bentleigh East, VIC, 3165, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-g">0</td>
+        </tr>
+        <tr class="tr-y">
+          <td>BEN GROCERY WHOLE SELLER PTY LTD</td>
+          <td>100 Fitzgerald Street East, , Northam, WA, 6401, AU</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5411</td>
+          <td>5411 Grocery Stores, Supermarkets</td>
+          <td>—</td>
           <td>7_DAY</td>
-          <td class="rs rs-r">4</td>
+          <td class="rs rs-y">3</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Hanok Box Hill</td>
+          <td>519-521 Station Street, , Box Hill, VIC, 3128, AU</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">2</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Moala</td>
+          <td>lot 2, 85 A'Beckett Street, Melbourne, VIC, 3000, AU</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-unk">Unknown</span></td>
+          <td>5812</td>
+          <td>5812 Eating Places, Restaurants</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">3</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Echuca Convenience Store</td>
+          <td>5A, 24  Nish Street, Echuca, VIC, 3564, AU</td>
+          <td><span class="b b-lo">Low</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5411</td>
+          <td>5499 Miscellaneous Food Stores</td>
+          <td>—</td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">2</td>
+        </tr>
+        <tr class="tr-y">
+          <td>Prices Fresh</td>
+          <td>463, 465 North East Road, Hillcrest, SA, 5086, AU</td>
+          <td><span class="b b-hi">High</span></td>
+          <td><span class="b b-com">Commercial</span></td>
+          <td>5462</td>
+          <td>5462 Bakeries</td>
+          <td><span class="b b-moto">MOTO</span></td>
+          <td>5_DAY</td>
+          <td class="rs rs-y">3</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 04 Sep 2026, 8:55 AM AEST · CCR automated pipeline</span>
+    <span>Generated 5 Sep 2026, 8:57 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1XY9QhZDrhHI9t41K5FZEQcq7Awk5jegwOjSOwOhf1c0/edit?usp=drivesdk">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1k_XIRJu4JcdP92xOyC4qhunbbgoLIUXq6o7PhsrSEtM/edit?usp=drivesdk&ouid=112374384952331404059">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

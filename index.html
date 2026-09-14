@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 12 Sep 2026</title>
+<title>Merchant Review — 15 Sep 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -292,48 +292,69 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">12 Sep 2026</div>
+  <div class="header-date">15 Sep 2026</div>
 </header>
 
 <div class="page">
 
   <div class="status-hero is-flagged">
-    <div class="status-num">3</div>
+    <div class="status-num">5</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 19 reviewed today</div>
+    <div class="status-sub">of 20 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">19</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">11</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">8</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">0</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">20</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">16</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">0</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">4</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="s-head">Needs Attention (3)</div>
-  <div class="flag-cards">
-    <div class="flag-card">
-      <div class="fc-name">Mali Melbourne</div>
-      <div class="fc-addr">27 Watsonia Road, , Watsonia, VIC, 3087, AU</div>
-      <div class="fc-tags">
-        <span class="tag t-mcc">MCC mismatch: 5462 &#8594; 5999 (Miscellaneous and Specialty Retail Stores)</span>
-      </div>
+  <div class="s-head">Needs Attention (5)</div>
+<div class="flag-cards">
+  <div class="flag-card risk-amber">
+    <div class="fc-name">ON-Gi</div>
+    <div class="fc-addr">Shop 414, 5 Footbridge Boulevard, Wentworth Point, NSW, 2127, AU</div>
+    <div class="fc-tags">
+      <span class="tag t-low">Low confidence</span>
     </div>
-    <div class="flag-card">
-      <div class="fc-name">Eno &sup3; Bakerhouse</div>
-      <div class="fc-addr">517 Station Street, , Box Hill, VIC, 3128, AU</div>
-      <div class="fc-tags">
-        <span class="tag t-mcc">MCC mismatch: 5462 &#8594; 5812 (Eating Places, Restaurants)</span>
-      </div>
+    <div class="fc-osint">No distinct social media presence found for 'ON-Gi'; the Google Places listing for this shop is under 'Chicken V Wentworth Point', matching the legal name (G&amp;H Chicken V Pty Ltd) rather than the trading name — likely a new/rebranded fit-out not yet reflected online.</div>
+  </div>
+  <div class="flag-card risk-amber">
+    <div class="fc-name">Fortune Kitchen</div>
+    <div class="fc-addr">270 Canterbury Road, Forest Hill, VIC, 3131, AU</div>
+    <div class="fc-tags">
+      <span class="tag t-low">Low confidence</span>
     </div>
-    <div class="flag-card">
-      <div class="fc-name">Wangaratta convenience store</div>
-      <div class="fc-addr">24-34 Ford Street, , Wangaratta, VIC, 3677, AU</div>
-      <div class="fc-tags">
-        <span class="tag t-mcc">MCC mismatch: 5411 &#8594; 5499 (Miscellaneous Food Stores)</span>
-      </div>
+    <div class="fc-osint">No online presence found for 'Fortune Kitchen' at Forest Hill Chase Shopping Centre kiosk K032 (270 Canterbury Rd) — the site is currently Google-listed as 'Panda Kitchen Origin Forest Hill'; no matching social media or directory listing for the trading name was located, consistent with a recent kiosk tenancy change.</div>
+  </div>
+  <div class="flag-card risk-amber">
+    <div class="fc-name">bayswater milkbar</div>
+    <div class="fc-addr">69 Stud Road Service Road, Bayswater, VIC, 3153, AU</div>
+    <div class="fc-tags">
+      <span class="tag t-low">Low confidence</span>
+      <span class="tag t-mcc">MCC mismatch: 5411 -&gt; 5812 (Eating Places, Restaurants)</span>
+    </div>
+    <div class="fc-osint">Confirmed via Yellow Pages/DoorDash/place-advisor listings for 'Stud Bay Milk Bar' at 69 Stud Road, Bayswater VIC — same address and premises; Google marks this listing CLOSED_PERMANENTLY though third-party directories still show it active, suggesting a possible reopening/rebrand as 'bayswater milkbar'.</div>
+  </div>
+  <div class="flag-card">
+    <div class="fc-name">TG Quality Butchers</div>
+    <div class="fc-addr">Shop 5, Wellington village shopping centre Wellington road, Rowville, VIC, 3178, AU</div>
+    <div class="fc-tags">
+      <span class="tag t-mcc">MCC mismatch: 5422 -&gt; 5999 (Miscellaneous and Specialty Retail Stores)</span>
     </div>
   </div>
+  <div class="flag-card">
+    <div class="fc-name">The Avenue Fish and Chips</div>
+    <div class="fc-addr">61 Hartleigh Street, Clyde, VIC, 3978, AU</div>
+    <div class="fc-tags">
+      <span class="tag t-low">Low confidence</span>
+      <span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5814 (Fast Food Restaurants)</span>
+      <span class="tag t-res">Residential address</span>
+    </div>
+    <div class="fc-osint">No business listing or social media found at 61 Hartleigh Street, Clyde — the street appears purely residential (real-estate/house-sale listings only, no shopfront or directory entries). The well-known 'The Avenue Fish and Chips' brand actually trades from Cranbourne North (~20 Linden Tree Way / Cnr William Thwaites Blvd, ~2km away), so the Google top-result for this name is a different, unrelated premises. Likely an address/name mismatch or an unlisted home-based operation.</div>
+  </div>
+</div>
 
   <div class="s-head">All Merchants</div>
   <div class="table-wrap">
@@ -353,222 +374,233 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
       </thead>
       <tbody>
         <tr class="tr-g">
-          <td>Kyoto Matcha</td>
-          <td>46, 44-86 Swanston Street, Melbourne, VIC, 3000, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Delhi Streets</td>
-          <td>22 Katherine Place, , Melbourne, VIC, 3000, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>7_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Dumplings on the green-Raymond Terrace</td>
-          <td>7 Walker Crescent, , Raymond Terrace, NSW, 2324, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>TAMAGAWA JAPANESE RESTAURANT</td>
-          <td>318 Sydney Road, , Balgowlah, NSW, 2093, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Mali Melbourne</td>
-          <td>27 Watsonia Road, , Watsonia, VIC, 3087, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5462</td>
-          <td>5999 Miscellaneous and Specialty Retail Stores</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>VESBAR ESPRESSO PTY LTD</td>
-          <td>1 Warburton Street, , Marrickville, NSW, 2204, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Ur Pho</td>
-          <td>63 Cronulla Street, , Cronulla, NSW, 2230, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>7_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Eno &sup3; Bakerhouse</td>
-          <td>517 Station Street, , Box Hill, VIC, 3128, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5462</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Chicken V Lidcombe</td>
-          <td>4 Bridge Street, , Lidcombe, NSW, 2141, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Wangaratta convenience store</td>
-          <td>24-34 Ford Street, , Wangaratta, VIC, 3677, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5411</td>
-          <td>5499 Miscellaneous Food Stores</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>BarCycle Walsh Bay</td>
-          <td>Shop 3, 17A Hickson Road, Walsh Bay, NSW, 2000, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Raw Raw Raw</td>
-          <td>74 South Terrace, , Fremantle, WA, 6160, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-r">
-          <td>Brew Cafe</td>
-          <td>121-127 Harrington Street, , The Rocks, NSW, 2000, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td><span class="b b-moto">MOTO</span></td>
-          <td>7_DAY</td>
-          <td class="rs rs-r">4</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Giwa Chicken &amp; Beer</td>
-          <td>52 Shoal Bay Road, , Nelson Bay, NSW, 2315, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>7_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Dumplings On The Green - Gloucester</td>
-          <td>32 Denison Street, , Gloucester, NSW, 2422, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Kenangan Coffee Regent Place</td>
-          <td>501 George Street, , Sydney, NSW, 2000, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">1</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Midnight Canteen</td>
-          <td>1, 25 Rushton Street, Werribee, VIC, 3030, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
-        <tr class="tr-r">
-          <td>Red Galangal Rouse Hill</td>
-          <td>8, 40 Panmure Street, Rouse Hill, NSW, 2155, AU</td>
-          <td><span class="b b-md">Medium</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td><span class="b b-moto">MOTO</span></td>
-          <td>5_DAY</td>
-          <td class="rs rs-r">4</td>
-        </tr>
-        <tr class="tr-g">
-          <td>Izakaya Miyazaki</td>
-          <td>Basement, 114 Russell Street, Melbourne, VIC, 3000, AU</td>
-          <td><span class="b b-hi">High</span></td>
-          <td><span class="b b-com">Commercial</span></td>
-          <td>5812</td>
-          <td>5812 Eating Places, Restaurants</td>
-          <td>—</td>
-          <td>5_DAY</td>
-          <td class="rs rs-g">0</td>
-        </tr>
+  <td>Fortune House Doncaster</td>
+  <td>u6, 272 Blackburn Road, Doncaster East, VIC, 3109, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-g">0</td>
+</tr>
+<tr class="tr-y">
+  <td>ON-Gi</td>
+  <td>Shop 414, 5 Footbridge Boulevard, Wentworth Point, NSW, 2127, AU</td>
+  <td><span class="b b-lo">Low</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-y">2</td>
+</tr>
+<tr class="tr-g">
+  <td>Cobblebank Fish and Chips</td>
+  <td>Shop 13, 211 Ferris Road, Cobblebank, VIC, 3338, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-g">1</td>
+</tr>
+<tr class="tr-y">
+  <td>Fortune Kitchen</td>
+  <td>270 Canterbury Road, Forest Hill, VIC, 3131, AU</td>
+  <td><span class="b b-lo">Low</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-y">2</td>
+</tr>
+<tr class="tr-g">
+  <td>The Nook Café - Westfield Knox</td>
+  <td>1101, 425 Burwood Highway, Wantirna South, VIC, 3152, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-g">0</td>
+</tr>
+<tr class="tr-g">
+  <td>Dumplings Eats</td>
+  <td>2, 32 Wells Street, Frankston, VIC, 3199, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-g">0</td>
+</tr>
+<tr class="tr-g">
+  <td>Presso</td>
+  <td>79 New Illawarra Road, Bexley North, NSW, 2207, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-g">0</td>
+</tr>
+<tr class="tr-g">
+  <td>Al-Ameen Bakery</td>
+  <td>46-50 Wellington Road, South Granville, NSW, 2142, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5462</td>
+  <td>5462 Bakeries</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-g">1</td>
+</tr>
+<tr class="tr-g">
+  <td>The Big Bang Barbers Selandra</td>
+  <td>2 Selandra Boulevard, Clyde North, VIC, 3978, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>7230</td>
+  <td>7230 Beauty and Barber Shops</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-g">1</td>
+</tr>
+<tr class="tr-y">
+  <td>bayswater milkbar</td>
+  <td>69 Stud Road Service Road, Bayswater, VIC, 3153, AU</td>
+  <td><span class="b b-lo">Low</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5411</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-y">3</td>
+</tr>
+<tr class="tr-g">
+  <td>TG Quality Butchers</td>
+  <td>Shop 5, Wellington village shopping centre Wellington road, Rowville, VIC, 3178, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5422</td>
+  <td>5999 Miscellaneous and Specialty Retail Stores</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-g">1</td>
+</tr>
+<tr class="tr-g">
+  <td>Riverview Cafe Wine &amp; Bar</td>
+  <td>3373 Warburton Highway, Warburton, VIC, 3799, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-g">0</td>
+</tr>
+<tr class="tr-g">
+  <td>Ichigo Sushi</td>
+  <td>Shop 2, 989 Victoria Road, West Ryde, NSW, 2114, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-g">1</td>
+</tr>
+<tr class="tr-r">
+  <td>The Avenue Fish and Chips</td>
+  <td>61 Hartleigh Street, Clyde, VIC, 3978, AU</td>
+  <td><span class="b b-lo">Low</span></td>
+  <td><span class="b b-res">Residential</span></td>
+  <td>5812</td>
+  <td>5814 Fast Food Restaurants</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-r">5</td>
+</tr>
+<tr class="tr-g">
+  <td>Doustan supermarket &amp; Halal butchery</td>
+  <td>13 Detroit Crescent, Corio, VIC, 3214, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5411</td>
+  <td>5411 Grocery Stores, Supermarkets</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-g">0</td>
+</tr>
+<tr class="tr-g">
+  <td>BB Chi</td>
+  <td>9, 5 Hillcrest Road, Pennant Hills, NSW, 2120, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-g">1</td>
+</tr>
+<tr class="tr-y">
+  <td>Historic Lounders Boatshed Cafe</td>
+  <td>1018 Victoria Drive, Adelaide, SA, 5000, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td><span class="b b-moto">MOTO</span></td>
+  <td>5_DAY</td>
+  <td class="rs rs-y">3</td>
+</tr>
+<tr class="tr-y">
+  <td>Red Galangal North Kellyville</td>
+  <td>10-12 Hezlett Road, Kellyville, NSW, 2155, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td><span class="b b-moto">MOTO</span></td>
+  <td>5_DAY</td>
+  <td class="rs rs-y">3</td>
+</tr>
+<tr class="tr-g">
+  <td>The Rice Home Adelaide</td>
+  <td>27 Field Street, Adelaide, SA, 5000, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>5_DAY</td>
+  <td class="rs rs-g">0</td>
+</tr>
+<tr class="tr-g">
+  <td>Cafe Achim</td>
+  <td>58 Balaclava Road, Eastwood, NSW, 2122, AU</td>
+  <td><span class="b b-hi">High</span></td>
+  <td><span class="b b-com">Commercial</span></td>
+  <td>5812</td>
+  <td>5812 Eating Places, Restaurants</td>
+  <td>—</td>
+  <td>7_DAY</td>
+  <td class="rs rs-g">1</td>
+</tr>
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 12 Sep 2026, 8:57 AM AEST · CCR automated pipeline</span>
+    <span>Generated 15 Sep 2026, 9:01 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1JdJbgBzP0sWcskIEL5fm3MEllwPVDolWYm3e0CHs3Ck/edit?usp=drivesdk">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1Evw3w0aWy0wsVP2BaNWoNPwZSzoW_44CFzBA5yAqEs4/edit">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

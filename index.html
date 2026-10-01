@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 1 Oct 2026</title>
+<title>Merchant Review — 2 Oct 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -62,14 +61,12 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
-/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -99,7 +96,6 @@ body {
   margin-top: 5px;
 }
 
-/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -132,7 +128,6 @@ body {
   margin-top: 4px;
 }
 
-/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -151,7 +146,6 @@ body {
   background: var(--line);
 }
 
-/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -195,7 +189,6 @@ body {
   border-left: 2px solid var(--line);
 }
 
-/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -207,7 +200,6 @@ body {
   margin-bottom: 28px;
 }
 
-/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -263,7 +255,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
-/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -280,7 +271,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -292,28 +282,30 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">1 Oct 2026</div>
+  <div class="header-date">2 Oct 2026</div>
 </header>
 
 <div class="page">
 
   <div class="status-hero is-flagged">
-    <div class="status-num">2</div>
+    <div class="status-num">4</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 19 reviewed today</div>
+    <div class="status-sub">of 8 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">19</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">10</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">7</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">2</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">8</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">3</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">2</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">3</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="s-head">Needs Attention (2)</div>
+  <div class="s-head">Needs Attention (4)</div>
 <div class="flag-cards">
-<div class="flag-card"><div class="fc-name">Everytime Mix</div><div class="fc-addr">37 The Crescent, Fairfield, NSW 2165</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-res">Residential address</span></div><div class="fc-osint">No social media presence found (Facebook/Instagram/Waze/TikTok) — zero online footprint. Google only returned the bare street address; legal name is a personal name (possible home-based sole trader).</div></div>
-<div class="flag-card risk-amber"><div class="fc-name">Coffee corner cafe</div><div class="fc-addr">27 Echo Loop, Pakenham, VIC 3810</div><div class="fc-tags"><span class="tag t-low">Low confidence</span></div><div class="fc-osint">No Google result and no matching Facebook/Instagram/Waze/TikTok presence found in Pakenham VIC — zero online footprint.</div></div>
+<div class="flag-card risk-amber"><div class="fc-name">ChaTraMue</div><div class="fc-addr">Shop 2, 896 Albany Highway, East Victoria Park, WA 6101</div><div class="fc-tags"><span class="tag t-low">Low confidence</span></div><div class="fc-osint">Google matched a US business (Los Angeles) - wrong country. No Facebook/Instagram/Waze/TikTok presence found for this suburb.</div></div>
+<div class="flag-card risk-amber"><div class="fc-name">Seoul Garden Galeries</div><div class="fc-addr">500 George Street, Sydney, NSW 2000</div><div class="fc-tags"><span class="tag t-low">Low confidence</span></div><div class="fc-osint">No Google listing. Address is The Galeries shopping centre (500 George St) - commercial premises, but no Seoul Garden tenant or social presence confirmed.</div></div>
+<div class="flag-card risk-amber"><div class="fc-name">Malaga Candy Store</div><div class="fc-addr">7 Bonner Drive, Malaga, WA 6090</div><div class="fc-tags"><span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5441 (Candy, Nut and Confectionery Stores)</span></div></div>
+<div class="flag-card"><div class="fc-name">Mixture Matamata</div><div class="fc-addr">102 Peria Road, Matamata, Waikato Region 3472, NZ</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">Google place at this address is Matamata Country Club, not the merchant. No online footprint found for the trading name.</div></div>
 </div>
 
   <div class="s-head">All Merchants</div>
@@ -333,34 +325,23 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
         </tr>
       </thead>
       <tbody>
-        <tr class="tr-y"><td>Wara Sushi Cairns Central</td><td>1-21 McLeod Street, Cairns City, QLD 4870</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-y"><td>Bonjuk Sunnybank</td><td>1, 21 Farne Street, Sunnybank Hills, QLD 4109</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-r"><td>Everytime Mix</td><td>37 The Crescent, Fairfield, NSW 2165</td><td><span class="b b-lo">Low</span></td><td><span class="b b-res">Residential</span></td><td>5499</td><td>5999 Misc. &amp; Specialty Retail (fallback)</td><td>—</td><td>7_DAY</td><td class="rs rs-r">5</td></tr>
-<tr class="tr-y"><td>Coffee corner cafe</td><td>27 Echo Loop, Pakenham, VIC 3810</td><td><span class="b b-lo">Low</span></td><td><span class="b b-unk">Unknown</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-g"><td>TT Nails &amp; Brows</td><td>Shop 37A, 950 Wanneroo Road, Wanneroo, WA 6065</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>7230</td><td>7230 Beauty and Barber Shops</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-y"><td>Wara Sushi Parkside Plaza Mackay</td><td>245 Bridge Road, West Mackay, QLD 4740</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-g"><td>Robata Jones</td><td>8 Wilkes Avenue, Artarmon, NSW 2064</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-g"><td>Handmade Ramen Bar</td><td>368 Forest Road, Hurstville, NSW 2220</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-y"><td>The Rising Sun Inn</td><td>60 Bridge Street, Kensington, SA 5068</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5813 Drinking Places, Bars</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-g"><td>Yoh-Gut</td><td>58 Oshanassy Street, Sunbury, VIC 3429</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-y"><td>Stoked Eatery</td><td>71, 79 Rora Street, Te Kūiti, NZ 3910</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-r"><td>Ground Floor Cafe</td><td>80 George Street, Parramatta, NSW 2150</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-g"><td>Kian Bread</td><td>2, 8 Old Northern Road, Baulkham Hills, NSW 2153</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5462</td><td>5462 Bakeries</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-g"><td>Peppercorn Deli</td><td>133-155 Kingsclere Avenue, Keysborough, VIC 3173</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-y"><td>Workshop</td><td>1146 Glen Huntly Road, Glen Huntly, VIC 3163</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-y"><td>Woodcroft Chargrill Chicken &amp; Seafood</td><td>43, 185-191 Bains Road, Morphett Vale, SA 5162</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-g"><td>Ro Sushi</td><td>3, 672 Glenferrie Road, Hawthorn, VIC 3122</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-g"><td>Now &amp; Then Cafe</td><td>204 High Street, Kew, VIC 3101</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-y"><td>Mascalzone</td><td>22 Pier Street, Altona, VIC 3018</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
+        <tr class="tr-y"><td>ChaTraMue</td><td>Shop 2, 896 Albany Highway, East Victoria Park, WA 6101</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-y">2</td></tr>
+<tr class="tr-g"><td>Gong Cha Merrylands Central</td><td>242 Pitt Street, Merrylands, NSW 2160</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-y"><td>Seoul Garden Galeries</td><td>500 George Street, Sydney, NSW 2000</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-y">2</td></tr>
+<tr class="tr-g"><td>Malaga Candy Store</td><td>7 Bonner Drive, Malaga, WA 6090</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5441 Candy, Nut and Confectionery Stores</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-r"><td>Mixture Matamata</td><td>102 Peria Road, Matamata, Waikato Region 3472, NZ</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">5</td></tr>
+<tr class="tr-r"><td>CORNERSTONE CAFETERIA</td><td>2 Station Street, Pakenham, VIC 3810</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-r"><td>O&#x27;Heas Bakery, Deli &amp; Foodstore</td><td>203-205 O&#x27;Hea Street, Coburg, VIC 3058</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5462 Bakeries</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-g"><td>Rice at Collins</td><td>595 Collins Street, Melbourne, VIC 3000</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
 
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 1 Oct 2026, 8:55 AM AEST · CCR automated pipeline</span>
+    <span>Generated 2 Oct 2026, 8:55 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1iDX0Z_kBIt5A-1IqXG_-BW8IgvJ0oA_boIH4vhXTFko/edit">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1h8s85R-ynNdVECsU5vMwTFiZQ_KnrakPKYOEhcukb1M/edit">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

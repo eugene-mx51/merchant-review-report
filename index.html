@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 14 Oct 2026</title>
+<title>Merchant Review — 15 Oct 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -62,14 +61,12 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
-/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -99,7 +96,6 @@ body {
   margin-top: 5px;
 }
 
-/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -132,7 +128,6 @@ body {
   margin-top: 4px;
 }
 
-/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -151,7 +146,6 @@ body {
   background: var(--line);
 }
 
-/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -195,7 +189,6 @@ body {
   border-left: 2px solid var(--line);
 }
 
-/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -207,7 +200,6 @@ body {
   margin-bottom: 28px;
 }
 
-/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -263,7 +255,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
-/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -280,7 +271,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -292,25 +282,26 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">14 Oct 2026</div>
+  <div class="header-date">15 Oct 2026</div>
 </header>
 
 <div class="page">
 
   <div class="status-hero is-flagged">
-    <div class="status-num">4</div>
+    <div class="status-num">1</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 17 reviewed today</div>
+    <div class="status-sub">of 23 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">17</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">5</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">8</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">4</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">23</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">13</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">10</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">0</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="s-head">Needs Attention (4)</div><div class="flag-cards"><div class="flag-card"><div class="fc-name">Man Fried Chicken</div><div class="fc-addr">7 Morley Crescent, Box Hill North, VIC, 3129, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-res">Residential address</span></div><div class="fc-osint">No Facebook/Instagram/Waze/TikTok presence or listing found in Box Hill North VIC; Google matched a different business (Butterfry Chicken Box Hill). Address previously identified as a residential house.</div></div><div class="flag-card risk-amber"><div class="fc-name">Lai grocery</div><div class="fc-addr">73 Brice Avenue, Mooroolbark, VIC, 3138, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span></div><div class="fc-osint">No online listing found for this name at 73 Brice Avenue, Mooroolbark; Google matched a different store (KKJ Grocery, 62 Manchester Rd). Legal name is a personal name — possible home-based sole trader.</div></div><div class="flag-card"><div class="fc-name">JJNJS PTY LTD</div><div class="fc-addr">unit 4, 35 Wannaeue Place, Rosebud, VIC, 3939, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No social presence found. Address is Rosebud Central shopping centre (Shop 4/35 Wannaeue Pl) — commercial premises; Google returned only the address.</div></div><div class="flag-card"><div class="fc-name">Martx</div><div class="fc-addr">330 Maroondah Highway, Croydon, VIC, 3136, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-res">Residential address</span></div><div class="fc-osint">No web/social presence found for Martx at 330 Maroondah Hwy, Croydon; Google returned only a street address.</div></div></div>
+  <div class="s-head">Needs Attention (1)</div>
+<div class="flag-cards"><div class="flag-card risk-amber"><div class="fc-name">Lovey Patisserie Doncaster</div><div class="fc-addr">1, 642 Doncaster Road, Doncaster, VIC, 3108, AU</div><div class="fc-tags"><span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5462 (Bakeries)</span></div></div></div>
 
   <div class="s-head">All Merchants</div>
   <div class="table-wrap">
@@ -329,31 +320,38 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
         </tr>
       </thead>
       <tbody>
-        <tr class="tr-y"><td>Techie Choice - Pakenham</td><td>140 Windermere Boulevard, Pakenham, VIC, 3810, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5732</td><td>5732 Electronics Sales</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-r"><td>Man Fried Chicken</td><td>7 Morley Crescent, Box Hill North, VIC, 3129, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-res">Residential</span></td><td>5812</td><td>5814 Fast Food Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-y"><td>Jungle Twist</td><td>24 Restwell Street, Bankstown, NSW, 2200, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-g"><td>Lolo and Wren</td><td>484 Albion Street, Brunswick West, VIC, 3055, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-r"><td>La Cucina Melbourne</td><td>628 Little Bourke Street, Melbourne, VIC, 3000, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-g"><td>Rice Workshop Chadstone</td><td>1341 Dandenong Road, Chadstone, VIC, 3148, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-y"><td>Lai grocery</td><td>73 Brice Avenue, Mooroolbark, VIC, 3138, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-unk">Unknown</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-r"><td>Ottoman Kebabs &amp; Pizza</td><td>65-67 Ashley Street, Braybrook, VIC, 3019, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5814 Fast Food Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">5</td></tr>
-<tr class="tr-g"><td>Velvet Bean Southland</td><td>1239 Nepean Highway, Cheltenham, VIC, 3192, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-r"><td>JJNJS PTY LTD</td><td>unit 4, 35 Wannaeue Place, Rosebud, VIC, 3939, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5422</td><td>5999 Misc and Specialty Retail</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">5</td></tr>
-<tr class="tr-y"><td>Techie Choice - Officer</td><td>Koisk 1, Arena Shopping Centre, Cardinia Road, Officer, VIC, 3809, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5732</td><td>5732 Electronics Sales</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-y"><td>mx51 PTY LTD</td><td>135 King Street, Sydney, NSW, 2000, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>7392</td><td>7392 Management, Consulting and PR Services</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-r"><td>Martx</td><td>330 Maroondah Highway, Croydon, VIC, 3136, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-res">Residential</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-g"><td>Thai Social Chadstone</td><td>1341 Dandenong Road, Chadstone, VIC, 3148, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-y"><td>Seoul BAB North Ryde</td><td>5 Delhi Road, North Ryde, NSW, 2113, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-y"><td>Saccharomyces Bottle Shop Taringa</td><td>191 Moggill Road, Taringa, QLD, 4068, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5921</td><td>5921 Package Stores - Beer, Wine, Liquor</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-g"><td>Wyndham Fresh Fish Place</td><td>1, 380 Sayers Road Service Road, Tarneit, VIC, 3029, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5499</td><td>5499 Miscellaneous Food Stores</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+        <tr class="tr-r"><td>Thaiwi Orewa</td><td>unit 7, 292 Hibiscus Coast Highway, Auckland, Auckland, 0931, NZ</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-g"><td>The Lemon Tree Grocer</td><td>23 Station Street, , Wentworth Falls, NSW, 2782, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Towns' Dumpling</td><td>1-25 Princes Highway, , Dandenong, VIC, 3175, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-g"><td>Inglewood Lotto, News and Flowers</td><td>847 Beaufort Street, , Inglewood, WA, 6052, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5994</td><td>5994 News Dealers and Newsstands</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-r"><td>Pizza Tabrabane Ballarat</td><td>11 Valiant Road, , Smythes Creek, VIC, 3351, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-r"><td>Swiss Link Pty Ltd</td><td>6, 6.09, 207 Kent Street, Sydney, NSW, 2000, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5944</td><td>5944 Jewelry Stores</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-g"><td>Dragon Hot Pot Knox</td><td>509 Burwood Highway, , Wantirna South, VIC, 3152, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-y"><td>Jeon&amp;kal Jip</td><td>unit 16, 2b Vaughan Street, Lidcombe, NSW, 2141, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
+<tr class="tr-g"><td>Viet Shack</td><td>2, 408 Unley Road, Unley Park, SA, 5061, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>NWN TRADERS PTY LTD</td><td>55 Vincent Road, , Wangaratta, VIC, 3677, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5999 Miscellaneous and Specialty Retail Stores</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Paws Spas</td><td>75 Cosmopolitan Drive, , Wyndham Vale, VIC, 3024, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5995</td><td>5995 Pet Shops, Pet Food and Supplies</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-g"><td>Techie Choice - Clyde</td><td>280 Berwick-Cranbourne Road, , Clyde, VIC, 3978, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5732</td><td>5732 Electronics Sales</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Cornerfolk Cafe</td><td>Shop 1, 544-546 Mitcham Road, Mitcham, VIC, 3132, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-r"><td>Calibre24 Pty Ltd</td><td>153, 580 Hay Street, Perth, WA, 6000, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5944</td><td>5944 Jewelry Stores</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-g"><td>Delicia Eats</td><td>10 Playford Boulevard, , Elizabeth, SA, 5112, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Tea Bag Sunbury</td><td>3 Brook Street, , Sunbury, VIC, 3429, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Harar Restaurant</td><td>24 Paisley Street, , Footscray, VIC, 3011, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-g"><td>T Phan Snack Bar</td><td>98 Flinders Street, , Adelaide, SA, 5000, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-g"><td>Lovey Patisserie Doncaster</td><td>1, 642 Doncaster Road, Doncaster, VIC, 3108, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5462 Bakeries</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-g"><td>Istanbul Garden Cafe and Restaurant</td><td>16, 53 Cecil Avenue, Cannington, WA, 6107, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Onyu</td><td>4 Magdalene Terrace, , Wolli Creek, NSW, 2205, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Finest Bazaar</td><td>280 Berwick-Cranbourne Road, , Clyde, VIC, 3978, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>HAN MART</td><td>41-47 Shepherds Drive, , Cherrybrook, NSW, 2126, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 14 Oct 2026, 8:55 AM AEDT · CCR automated pipeline</span>
+    <span>Generated 15 Oct 2026, 8:45 AM AEDT · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/18qRyGlPLriWxSdVf4L0EzDX4vsUcfjAF3NIVBG97NsQ/edit">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/17xzlOKdY8MW4b90QvwAC_QOtxW_PI8KrcgwsUJ7fEdc/edit">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

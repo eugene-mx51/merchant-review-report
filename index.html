@@ -3,79 +3,286 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 17 Oct 2026</title>
+<title>Merchant Review — 20 Oct 2026</title>
 <style>
-:root{--ink:#0f1e2d;--ink-2:#4f637a;--ink-3:#8fa4b8;--mist:#eef3f9;--surf:#fff;--line:#dce5ef;--accent:#0ea5e9;--go:#059669;--go-bg:#ecfdf5;--go-bd:#6ee7b7;--warn:#dc2626;--warn-bg:#fff1f1;--warn-bd:#fca5a5;--amber:#c2710c;--amb-bg:#fffbeb;--amb-bd:#fcd34d;--blue:#1d4ed8;--blue-bg:#eff6ff;--blue-bd:#93c5fd;--plum:#6d28d9;--plum-bg:#f5f3ff;--plum-bd:#c4b5fd}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--mist);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
-.site-header{background:var(--ink);height:48px;padding:0 20px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#fff;letter-spacing:.01em}
-.brand-pip{width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0}
-.header-date{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.page{max-width:700px;margin:0 auto;padding:20px 16px 52px}
-.status-hero{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:36px 24px 28px;text-align:center;margin-bottom:10px}
-.status-num{font-size:72px;font-weight:800;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-.status-hero.is-flagged .status-num{color:var(--warn)}
-.status-hero.is-clear .status-num{color:var(--go)}
-.status-label{font-size:17px;font-weight:600;color:var(--ink);margin-top:8px}
-.status-sub{font-size:13px;color:var(--ink-2);margin-top:5px}
-.stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:24px}
-.stat-cell{background:var(--surf);border:1px solid var(--line);border-radius:8px;padding:12px 8px;text-align:center}
-.stat-n{font-size:24px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
-.stat-cell.s-total .stat-n{color:var(--ink)}
-.stat-cell.s-high .stat-n{color:var(--go)}
-.stat-cell.s-med .stat-n{color:var(--amber)}
-.stat-cell.s-low .stat-n{color:var(--warn)}
-.stat-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:500;margin-top:4px}
-.s-head{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.s-head::after{content:'';flex:1;height:1px;background:var(--line)}
-.flag-cards{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
-.flag-card{background:var(--surf);border:1px solid var(--line);border-left:3px solid var(--warn);border-radius:8px;padding:14px 16px}
-.flag-card.risk-amber{border-left-color:var(--amber)}
-.fc-name{font-size:15px;font-weight:700;line-height:1.3}
-.fc-addr{font-size:12px;color:var(--ink-2);margin-top:2px}
-.fc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
-.tag{display:inline-block;font-size:11px;font-weight:500;padding:2px 9px;border-radius:20px;border:1px solid}
-.t-low{background:var(--warn-bg);color:var(--warn);border-color:var(--warn-bd)}
-.t-mcc{background:var(--amb-bg);color:var(--amber);border-color:var(--amb-bd)}
-.t-res{background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)}
-.t-moto{background:var(--plum-bg);color:var(--plum);border-color:var(--plum-bd)}
-.fc-osint{margin-top:10px;font-size:12px;color:var(--ink-2);font-style:italic;padding:6px 10px;background:var(--mist);border-radius:5px;border-left:2px solid var(--line)}
-.all-clear{background:var(--go-bg);border:1px solid var(--go-bd);border-radius:8px;padding:14px 18px;font-size:14px;color:var(--go);font-weight:500;margin-bottom:28px}
-.table-wrap{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
-table{width:100%;border-collapse:collapse;background:var(--surf);font-size:12px;min-width:620px;font-variant-numeric:tabular-nums}
-thead th{background:var(--ink);color:#7fa0bb;padding:9px 12px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;white-space:nowrap}
-thead th:first-child{color:#e0eaf4}
-tbody tr{border-bottom:1px solid var(--mist)}
-tbody tr:last-child{border-bottom:none}
-tbody td{padding:9px 12px;vertical-align:middle}
-.tr-g{background:#f5fef8}
-.tr-y{background:#fefdf0}
-.tr-r{background:#fff6f6}
-.b{display:inline-block;padding:2px 7px;border-radius:20px;font-size:10px;font-weight:600;white-space:nowrap;border:1px solid}
-.b-hi{background:#f0fdf4;color:#166534;border-color:#86efac}
-.b-md{background:#fffbeb;color:#92400e;border-color:#fcd34d}
-.b-lo{background:#fff1f1;color:#991b1b;border-color:#fca5a5}
-.b-com{background:#eff6ff;color:#1e40af;border-color:#93c5fd}
-.b-res{background:#fff7ed;color:#c2410c;border-color:#fdba74}
-.b-unk{background:#f8fafc;color:#64748b;border-color:#cbd5e1}
-.b-moto{background:#faf5ff;color:#5b21b6;border-color:#c4b5fd}
-.rs{font-weight:700;font-size:14px}
-.rs-g{color:var(--go)}
-.rs-y{color:var(--amber)}
-.rs-r{color:var(--warn)}
-.site-footer{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;color:var(--ink-3)}
-.footer-links{display:flex;gap:16px}
-.footer-links a{color:var(--accent);text-decoration:none;font-weight:500}
-.footer-links a:hover{text-decoration:underline}
-@media (max-width:480px){.status-num{font-size:56px}.stat-n{font-size:20px}.stats-strip{gap:6px}}
+:root {
+  --ink:    #0f1e2d;
+  --ink-2:  #4f637a;
+  --ink-3:  #8fa4b8;
+  --mist:   #eef3f9;
+  --surf:   #ffffff;
+  --line:   #dce5ef;
+  --accent: #0ea5e9;
+
+  --go:     #059669; --go-bg:  #ecfdf5; --go-bd: #6ee7b7;
+  --warn:   #dc2626; --warn-bg:#fff1f1; --warn-bd:#fca5a5;
+  --amber:  #c2710c; --amb-bg: #fffbeb; --amb-bd: #fcd34d;
+  --blue:   #1d4ed8; --blue-bg:#eff6ff; --blue-bd:#93c5fd;
+  --plum:   #6d28d9; --plum-bg:#f5f3ff; --plum-bd:#c4b5fd;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--mist);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+  background: var(--ink);
+  height: 48px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.brand-pip {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.header-date {
+  font-size: 12px;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 16px 52px;
+}
+
+.status-hero {
+  background: var(--surf);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 36px 24px 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.status-num {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.status-hero.is-flagged .status-num { color: var(--warn); }
+.status-hero.is-clear   .status-num { color: var(--go);   }
+.status-label {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 8px;
+}
+.status-sub {
+  font-size: 13px;
+  color: var(--ink-2);
+  margin-top: 5px;
+}
+
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.stat-cell {
+  background: var(--surf);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+}
+.stat-n {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stat-cell.s-total .stat-n { color: var(--ink);  }
+.stat-cell.s-high  .stat-n { color: var(--go);   }
+.stat-cell.s-med   .stat-n { color: var(--amber); }
+.stat-cell.s-low   .stat-n { color: var(--warn);  }
+.stat-lbl {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.s-head {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.s-head::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.flag-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.flag-card {
+  background: var(--surf);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--warn);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.flag-card.risk-amber { border-left-color: var(--amber); }
+
+.fc-name  { font-size: 15px; font-weight: 700; line-height: 1.3; }
+.fc-addr  { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+.fc-tags  { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 9px;
+  border-radius: 20px;
+  border: 1px solid;
+}
+.t-low  { background: var(--warn-bg); color: var(--warn);  border-color: var(--warn-bd); }
+.t-mcc  { background: var(--amb-bg);  color: var(--amber); border-color: var(--amb-bd);  }
+.t-res  { background: var(--blue-bg); color: var(--blue);  border-color: var(--blue-bd); }
+.t-moto { background: var(--plum-bg); color: var(--plum);  border-color: var(--plum-bd); }
+
+.fc-osint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--ink-2);
+  font-style: italic;
+  padding: 6px 10px;
+  background: var(--mist);
+  border-radius: 5px;
+  border-left: 2px solid var(--line);
+}
+
+.all-clear {
+  background: var(--go-bg);
+  border: 1px solid var(--go-bd);
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: var(--go);
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surf);
+  font-size: 12px;
+  min-width: 620px;
+  font-variant-numeric: tabular-nums;
+}
+thead th {
+  background: var(--ink);
+  color: #7fa0bb;
+  padding: 9px 12px;
+  text-align: left;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+thead th:first-child { color: #e0eaf4; }
+tbody tr           { border-bottom: 1px solid var(--mist); }
+tbody tr:last-child { border-bottom: none; }
+tbody td           { padding: 9px 12px; vertical-align: middle; }
+
+.tr-g { background: #f5fef8; }
+.tr-y { background: #fefdf0; }
+.tr-r { background: #fff6f6; }
+
+.b {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid;
+}
+.b-hi  { background: #f0fdf4; color: #166534; border-color: #86efac; }
+.b-md  { background: #fffbeb; color: #92400e; border-color: #fcd34d; }
+.b-lo  { background: #fff1f1; color: #991b1b; border-color: #fca5a5; }
+.b-com { background: #eff6ff; color: #1e40af; border-color: #93c5fd; }
+.b-res { background: #fff7ed; color: #c2410c; border-color: #fdba74; }
+.b-unk { background: #f8fafc; color: #64748b; border-color: #cbd5e1; }
+.b-moto{ background: #faf5ff; color: #5b21b6; border-color: #c4b5fd; }
+
+.rs   { font-weight: 700; font-size: 14px; }
+.rs-g { color: var(--go);   }
+.rs-y { color: var(--amber);}
+.rs-r { color: var(--warn); }
+
+.site-footer {
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.footer-links { display: flex; gap: 16px; }
+.footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.footer-links a:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .status-num { font-size: 56px; }
+  .stat-n { font-size: 20px; }
+  .stats-strip { gap: 6px; }
+}
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">17 Oct 2026</div>
+  <div class="header-date">20 Oct 2026</div>
 </header>
 
 <div class="page">
@@ -83,21 +290,21 @@ tbody td{padding:9px 12px;vertical-align:middle}
   <div class="status-hero is-flagged">
     <div class="status-num">3</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 17 reviewed today</div>
+    <div class="status-sub">of 11 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">17</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">10</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">6</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">1</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">11</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">5</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">3</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">3</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
   <div class="s-head">Needs Attention (3)</div>
 <div class="flag-cards">
-<div class="flag-card"><div class="fc-name">fratelli polito</div><div class="fc-addr">23 Lady Penrhyn Drive, , Beacon Hill, NSW, 2100, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-res">Residential address</span></div><div class="fc-osint">No web/social presence found for &#x27;Fratelli Polito&#x27; in Beacon Hill NSW — zero online footprint noted. Address appears to be a residential house.</div></div>
-<div class="flag-card"><div class="fc-name">The Gift &amp; Goods Market</div><div class="fc-addr">5, 2 Rooty Hill Road South, Rooty Hill, NSW, 2766, AU</div><div class="fc-tags"><span class="tag t-mcc">MCC mismatch: 5310 -&gt; 5411 (Grocery Stores, Supermarkets)</span><span class="tag t-moto">MOTO enabled</span></div></div>
-<div class="flag-card"><div class="fc-name">VICTORY CAR PARK</div><div class="fc-addr">530 Little Collins Street, , Melbourne, VIC, 3000, AU</div><div class="fc-tags"><span class="tag t-mcc">MCC mismatch: 7512 -&gt; 7523 (Parking Lots and Garages)</span><span class="tag t-moto">MOTO enabled</span></div></div>
+<div class="flag-card"><div class="fc-name">Anna kitchen House</div><div class="fc-addr">196 Flinders Street, Adelaide, SA 5000</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-res">Residential address</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No social media presence found — zero online footprint noted. Google returned only a bare street address for 196 Flinders St; no commercial listing found.</div></div>
+<div class="flag-card"><div class="fc-name">Connect 2</div><div class="fc-addr">21 Solent Circuit, Norwest, NSW 2153</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5999 (Misc and Specialty Retail Stores)</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No social media presence found. Google matched NSW Strata Management at the same address, not this trading name.</div></div>
+<div class="flag-card"><div class="fc-name">Wellard Indian Restaurant</div><div class="fc-addr">10 The Strand, Wellard, WA 6170</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No social media presence found for this name in Wellard WA. Google matched a different restaurant (Desi Bitez) nearby.</div></div>
 </div>
 
   <div class="s-head">All Merchants</div>
@@ -117,32 +324,26 @@ tbody td{padding:9px 12px;vertical-align:middle}
         </tr>
       </thead>
       <tbody>
-        <tr class="tr-g"><td>Oushou Japanese Restaurant Brighton</td><td>292 Bay Street, , Brighton, VIC, 3186, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-r"><td>fratelli polito</td><td>23 Lady Penrhyn Drive, , Beacon Hill, NSW, 2100, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-res">Residential</span></td><td>5411</td><td>5499 Miscellaneous Food Stores</td><td>—</td><td>7_DAY</td><td class="rs rs-r">5</td></tr>
-<tr class="tr-g"><td>Gaado Gaado Noodle Bar</td><td>16 Magellan Road, , Springwood, QLD, 4127, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-r"><td>The Gift &amp; Goods Market</td><td>5, 2 Rooty Hill Road South, Rooty Hill, NSW, 2766, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5310</td><td>5411 Grocery Stores, Supermarkets</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">5</td></tr>
-<tr class="tr-y"><td>SUNSHINE BLINDS CANBERRA PTY. LTD.</td><td>201 Robin Boyd Crescent, , Taylor, ACT, 2913, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5719</td><td>5719 Miscellaneous Home Furnishings</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-g"><td>Nepstrading (Nepali &amp; Indian Grocery)</td><td>2-8 Northey Road, , Lynbrook, VIC, 3975, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5499</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-g"><td>BESTEA SHOPPE KENSINGTON</td><td>1a, 231 Anzac Parade, Kensington, NSW, 2033, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-y"><td>Thu Dung Butcher</td><td>47 Buckingham Avenue, , Springvale, VIC, 3171, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5422</td><td>5422 Freezer and Locker Meat Provisioners</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-r"><td>Masala Dosa</td><td>1-3 Universal Way, , Cranbourne West, VIC, 3977, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-g"><td>Velvet Bean Altona</td><td>112 Pier Street, , Altona, VIC, 3018, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-g"><td>Oh!Pho</td><td>5, 35 Elizabeth Street, Melbourne, VIC, 3000, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-g"><td>Manchester Road Fish &amp; Chips</td><td>43 Manchester Road, , Mooroolbark, VIC, 3138, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-g"><td>Heli Asian Grocery Casey</td><td>shop 106, 400 Narre Warren - Cranbourne Road, Narre Warren South, VIC, 3805, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-g"><td>The Kiosk Floreat</td><td>167 Ardross Street, , Ardross, WA, 6153, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-g"><td>stratton news</td><td>3 Jecks Place, , Stratton, WA, 6056, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5994</td><td>5942 Book Stores</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-r"><td>VICTORY CAR PARK</td><td>530 Little Collins Street, , Melbourne, VIC, 3000, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>7512</td><td>7523 Parking Lots and Garages</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-g"><td>Damee Eastwood</td><td>10 12, 4 Hillview Road, Eastwood, NSW, 2122, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+        <tr class="tr-r"><td>Wellard Indian Restaurant</td><td>10 The Strand, Wellard, WA 6170</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">5</td></tr>
+<tr class="tr-y"><td>BEAR CAFE FORESTVILLE</td><td>51 The Centre, Forestville, NSW 2087</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
+<tr class="tr-g"><td>Yoon Sushi Bowen Hills</td><td>20 King Street, Bowen Hills, QLD 4006</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-r"><td>Connect 2</td><td>21 Solent Circuit, Norwest, NSW 2153</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5999 Misc and Specialty Retail Stores</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">6</td></tr>
+<tr class="tr-r"><td>Parabanks Coffee Lounge</td><td>59 John Street, Salisbury, SA 5108</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-y"><td>Sam&#x27;s Chicken Campsie Centre</td><td>12 Amy Street, Campsie, NSW 2194</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5814 Fast Food Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
+<tr class="tr-y"><td>Cayman Café Harbour Town</td><td>147 Brisbane Road, Biggera Waters, QLD 4216</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
+<tr class="tr-g"><td>Ross &amp; Co Hair Design</td><td>38 Thornton Road, Cambridge, NZ 3434</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>7230</td><td>7230 Beauty and Barber Shops</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Fish &amp; Chips On Civic</td><td>39 Civic Parade, Altona, VIC 3018</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-y"><td>Port Elliot Bakery</td><td>31 North Terrace, Port Elliot, SA 5212</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5462</td><td>5462 Bakeries</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
+<tr class="tr-r"><td>Anna kitchen House</td><td>196 Flinders Street, Adelaide, SA 5000</td><td><span class="b b-lo">Low</span></td><td><span class="b b-res">Residential</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">8</td></tr>
 
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 19 Oct 2026, 8:55 AM AEDT · CCR automated pipeline</span>
+    <span>Generated 20 Oct 2026, 8:55 AM AEDT · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1LAkqpexPCJuqQ5700Nolw-3WBeqybTNTsyff6ZAcX6Q/edit">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1esq-8Oyv5V3nrhQjGv5Q49nR9WYP0N_4p7Z5kPsV9dU/edit">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

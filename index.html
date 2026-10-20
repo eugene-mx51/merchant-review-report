@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 20 Oct 2026</title>
+<title>Merchant Review — 21 Oct 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,6 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -61,12 +62,14 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
+/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -96,6 +99,7 @@ body {
   margin-top: 5px;
 }
 
+/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -128,6 +132,7 @@ body {
   margin-top: 4px;
 }
 
+/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -146,6 +151,7 @@ body {
   background: var(--line);
 }
 
+/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -189,6 +195,7 @@ body {
   border-left: 2px solid var(--line);
 }
 
+/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -200,6 +207,7 @@ body {
   margin-bottom: 28px;
 }
 
+/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -255,6 +263,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
+/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -271,6 +280,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
+/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -282,7 +292,7 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">20 Oct 2026</div>
+  <div class="header-date">21 Oct 2026</div>
 </header>
 
 <div class="page">
@@ -290,22 +300,18 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
   <div class="status-hero is-flagged">
     <div class="status-num">3</div>
     <div class="status-label">merchants need attention</div>
-    <div class="status-sub">of 11 reviewed today</div>
+    <div class="status-sub">of 20 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">11</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">5</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">3</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">3</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">20</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">12</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">6</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">2</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
   <div class="s-head">Needs Attention (3)</div>
-<div class="flag-cards">
-<div class="flag-card"><div class="fc-name">Anna kitchen House</div><div class="fc-addr">196 Flinders Street, Adelaide, SA 5000</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-res">Residential address</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No social media presence found — zero online footprint noted. Google returned only a bare street address for 196 Flinders St; no commercial listing found.</div></div>
-<div class="flag-card"><div class="fc-name">Connect 2</div><div class="fc-addr">21 Solent Circuit, Norwest, NSW 2153</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-mcc">MCC mismatch: 5812 -&gt; 5999 (Misc and Specialty Retail Stores)</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No social media presence found. Google matched NSW Strata Management at the same address, not this trading name.</div></div>
-<div class="flag-card"><div class="fc-name">Wellard Indian Restaurant</div><div class="fc-addr">10 The Strand, Wellard, WA 6170</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No social media presence found for this name in Wellard WA. Google matched a different restaurant (Desi Bitez) nearby.</div></div>
-</div>
+<div class="flag-cards"><div class="flag-card"><div class="fc-name">Niu Lan Xian</div><div class="fc-addr">3 Geddes Avenue, , Zetland, NSW, 2017, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-res">Residential address</span></div><div class="fc-osint">No social media presence found for &#x27;Niu Lan Xian&#x27; in Zetland NSW — zero online footprint. Address is in a residential apartment street (Geddes Ave); no commercial listing found.</div></div><div class="flag-card"><div class="fc-name">A GODELEKOGLU &amp; B GODELEKOGLU</div><div class="fc-addr">1, 26 Holbeche Road, Arndell Park, NSW, 2148, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No online footprint found for &#x27;A GODELEKOGLU &amp; B GODELEKOGLU&#x27;. Address (26 Holbeche Rd, Arndell Park) is an industrial estate with commercial unit listings, so address upgraded to Commercial.</div></div><div class="flag-card risk-amber"><div class="fc-name">B&amp;k groceries</div><div class="fc-addr">14, 24 Cavenagh Street, Darwin City, NT, 0800, AU</div><div class="fc-tags"><span class="tag t-mcc">MCC mismatch: 5311 -&gt; 5411 (Grocery Stores, Supermarkets)</span></div></div></div>
 
   <div class="s-head">All Merchants</div>
   <div class="table-wrap">
@@ -324,26 +330,35 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
         </tr>
       </thead>
       <tbody>
-        <tr class="tr-r"><td>Wellard Indian Restaurant</td><td>10 The Strand, Wellard, WA 6170</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">5</td></tr>
-<tr class="tr-y"><td>BEAR CAFE FORESTVILLE</td><td>51 The Centre, Forestville, NSW 2087</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-g"><td>Yoon Sushi Bowen Hills</td><td>20 King Street, Bowen Hills, QLD 4006</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-r"><td>Connect 2</td><td>21 Solent Circuit, Norwest, NSW 2153</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5999 Misc and Specialty Retail Stores</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">6</td></tr>
-<tr class="tr-r"><td>Parabanks Coffee Lounge</td><td>59 John Street, Salisbury, SA 5108</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-y"><td>Sam&#x27;s Chicken Campsie Centre</td><td>12 Amy Street, Campsie, NSW 2194</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5814 Fast Food Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-y"><td>Cayman Café Harbour Town</td><td>147 Brisbane Road, Biggera Waters, QLD 4216</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-g"><td>Ross &amp; Co Hair Design</td><td>38 Thornton Road, Cambridge, NZ 3434</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>7230</td><td>7230 Beauty and Barber Shops</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-g"><td>Fish &amp; Chips On Civic</td><td>39 Civic Parade, Altona, VIC 3018</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
-<tr class="tr-y"><td>Port Elliot Bakery</td><td>31 North Terrace, Port Elliot, SA 5212</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5462</td><td>5462 Bakeries</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-r"><td>Anna kitchen House</td><td>196 Flinders Street, Adelaide, SA 5000</td><td><span class="b b-lo">Low</span></td><td><span class="b b-res">Residential</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">8</td></tr>
+        <tr class="tr-y"><td>Rustic Thai Cuisine</td><td>22 Old Coach Road, , Aldinga, SA, 5173, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
+<tr class="tr-r"><td>Niu Lan Xian</td><td>3 Geddes Avenue, , Zetland, NSW, 2017, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-res">Residential</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-g"><td>China Bar</td><td>180 Bourke Street, , Melbourne, VIC, 3000, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Minori Cafe</td><td>267 Camberwell Road, , Camberwell, VIC, 3124, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-y"><td>Beacy Charcoal Chicken</td><td>5, 55 Old Princes Highway, Beaconsfield, VIC, 3807, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
+<tr class="tr-r"><td>A GODELEKOGLU &amp; B GODELEKOGLU</td><td>1, 26 Holbeche Road, Arndell Park, NSW, 2148, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5999 Misc &amp; Specialty Retail (no Google data; fallback)</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">5</td></tr>
+<tr class="tr-y"><td>bayswater Milkbar</td><td>69 Stud Road, , Bayswater, VIC, 3153, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5499 Misc Food Stores (milk bar)</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
+<tr class="tr-g"><td>The Chinese Charcoal BBQ House</td><td>30c, 358 Mains Road, Sunnybank, QLD, 4109, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-r"><td>Buttar Wholesaler</td><td>10 Nexus Street, , Ravenhall, VIC, 3023, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5199</td><td>5199 Nondurable Goods (wholesale)</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr>
+<tr class="tr-y"><td>Bean me up Cafe</td><td>unit 34, 28 Barcoo Street, Roseville, NSW, 2069, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
+<tr class="tr-g"><td>stratton news</td><td>3 Jecks Place, , Stratton, WA, 6056, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5994</td><td>5942 Book Stores (newsagent)</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Meet Fresh Eastwood</td><td>6, 1 Glen Street, Eastwood, NSW, 2122, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-g"><td>Pyramid Video and Spice</td><td>114-116 The Crescent, , Homebush West, NSW, 2140, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>B&amp;k groceries</td><td>14, 24 Cavenagh Street, Darwin City, NT, 0800, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5311</td><td>5411 Grocery Stores, Supermarkets</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>SUSHIKI PYRMONT</td><td>17-21 Pyrmont Bridge Road, , Pyrmont, NSW, 2009, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-g"><td>Mad Hotpot and Dumplings</td><td>19, 215 Parkhill Drive, Berwick, VIC, 3806, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
+<tr class="tr-r"><td>1Arena</td><td>1A Bank Street, , Box Hill, VIC, 3128, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5813 Drinking Places, Bars</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">5</td></tr>
+<tr class="tr-g"><td>The Hungry Hiker Indian &amp; Nepali Restaurant</td><td>163-165 Burwood Highway, , Tecoma, VIC, 3160, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr>
+<tr class="tr-y"><td>Yoon Sushi Bribie</td><td>239-255 Goodwin Drive, , Bongaree, QLD, 4507, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
+<tr class="tr-g"><td>St Germain Cafe</td><td>shop17a, 21 Saint Germain Boulevard, Clyde North, VIC, 3978, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
 
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 20 Oct 2026, 8:55 AM AEDT · CCR automated pipeline</span>
+    <span>Generated 21 Oct 2026, 8:55 AM AEDT · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1esq-8Oyv5V3nrhQjGv5Q49nR9WYP0N_4p7Z5kPsV9dU/edit">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1SmBDmvgPRwBBdTqgw26HE5WcvZIEj9QK9GvT_wwJXiY/edit?usp=drivesdk&ouid=112374384952331404059">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>

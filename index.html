@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merchant Review — 24 Oct 2026</title>
+<title>Merchant Review — 27 Oct 2026</title>
 <style>
 :root {
   --ink:    #0f1e2d;
@@ -31,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── HEADER ─────────────────────────────────────── */
 .site-header {
   background: var(--ink);
   height: 48px;
@@ -62,14 +61,12 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── PAGE ───────────────────────────────────────── */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 16px 52px;
 }
 
-/* ── STATUS HERO ────────────────────────────────── */
 .status-hero {
   background: var(--surf);
   border: 1px solid var(--line);
@@ -99,7 +96,6 @@ body {
   margin-top: 5px;
 }
 
-/* ── STATS STRIP ────────────────────────────────── */
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -132,7 +128,6 @@ body {
   margin-top: 4px;
 }
 
-/* ── SECTION LABEL ──────────────────────────────── */
 .s-head {
   font-size: 11px;
   font-weight: 600;
@@ -151,7 +146,6 @@ body {
   background: var(--line);
 }
 
-/* ── FLAGGED CARDS ──────────────────────────────── */
 .flag-cards {
   display: flex;
   flex-direction: column;
@@ -195,7 +189,6 @@ body {
   border-left: 2px solid var(--line);
 }
 
-/* ── ALL-CLEAR CALLOUT ──────────────────────────── */
 .all-clear {
   background: var(--go-bg);
   border: 1px solid var(--go-bd);
@@ -207,7 +200,6 @@ body {
   margin-bottom: 28px;
 }
 
-/* ── DATA TABLE ─────────────────────────────────── */
 .table-wrap {
   overflow-x: auto;
   border-radius: 10px;
@@ -263,7 +255,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .rs-y { color: var(--amber);}
 .rs-r { color: var(--warn); }
 
-/* ── FOOTER ─────────────────────────────────────── */
 .site-footer {
   margin-top: 32px;
   padding-top: 18px;
@@ -280,7 +271,6 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 .footer-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .footer-links a:hover { text-decoration: underline; }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 480px) {
   .status-num { font-size: 56px; }
   .stat-n { font-size: 20px; }
@@ -292,25 +282,25 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
 
 <header class="site-header">
   <div class="brand"><span class="brand-pip"></span>mx51 Merchant Review</div>
-  <div class="header-date">24 Oct 2026</div>
+  <div class="header-date">27 Oct 2026</div>
 </header>
 
 <div class="page">
 
-  <div class="status-hero is-clear">
-    <div class="status-num">0</div>
-    <div class="status-label">all clear</div>
-    <div class="status-sub">of 10 reviewed today</div>
+  <div class="status-hero is-flagged">
+    <div class="status-num">4</div>
+    <div class="status-label">merchants need attention</div>
+    <div class="status-sub">of 13 reviewed today</div>
   </div>
 
   <div class="stats-strip">
-    <div class="stat-cell s-total"><div class="stat-n">10</div><div class="stat-lbl">Reviewed</div></div>
-    <div class="stat-cell s-high"> <div class="stat-n">5</div>  <div class="stat-lbl">High</div></div>
-    <div class="stat-cell s-med">  <div class="stat-n">5</div><div class="stat-lbl">Medium</div></div>
-    <div class="stat-cell s-low">  <div class="stat-n">0</div>   <div class="stat-lbl">Low</div></div>
+    <div class="stat-cell s-total"><div class="stat-n">13</div><div class="stat-lbl">Reviewed</div></div>
+    <div class="stat-cell s-high"> <div class="stat-n">9</div>  <div class="stat-lbl">High</div></div>
+    <div class="stat-cell s-med">  <div class="stat-n">2</div><div class="stat-lbl">Medium</div></div>
+    <div class="stat-cell s-low">  <div class="stat-n">2</div>   <div class="stat-lbl">Low</div></div>
   </div>
 
-  <div class="all-clear">✓ No flags raised — all merchants reviewed without issues.</div>
+  <div class="s-head">Needs Attention (4)</div><div class="flag-cards"><div class="flag-card risk-amber"><div class="fc-name">Order Lemon Rhodes</div><div class="fc-addr">G09, Rhodes Central Shopping Centre, 6-14 Walker Street, Rhodes, NSW, 2138, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span></div><div class="fc-osint">No social media presence found for Rhodes NSW. Address is inside Rhodes Central Shopping Centre.</div></div><div class="flag-card risk-amber"><div class="fc-name">Zan Foods</div><div class="fc-addr">3 Ashburn Place, Blackburn, VIC, 3130, AU</div><div class="fc-tags"><span class="tag t-res">Residential address</span></div></div><div class="flag-card risk-amber"><div class="fc-name">Knick Knacks Kilkenny</div><div class="fc-addr">470 Torrens Road, Kilkenny, SA, 5009, AU</div><div class="fc-tags"><span class="tag t-mcc">MCC mismatch: 5411 Grocery Stores, Supermarkets -&gt; 5947 Gift, Card, Novelty Stores</span></div></div><div class="flag-card"><div class="fc-name">Nature&#x27;s Fresh Produce</div><div class="fc-addr">7 Classic Way, Burleigh Waters, QLD, 4220, AU</div><div class="fc-tags"><span class="tag t-low">Low confidence</span><span class="tag t-moto">MOTO enabled</span></div><div class="fc-osint">No Facebook/Instagram/Waze/TikTok presence found for this name in Burleigh Waters QLD. Address is inside Treetops Plaza shopping centre (reclassified Commercial).</div></div></div>
 
   <div class="s-head">All Merchants</div>
   <div class="table-wrap">
@@ -329,25 +319,15 @@ tbody td           { padding: 9px 12px; vertical-align: middle; }
         </tr>
       </thead>
       <tbody>
-        <tr class="tr-g"><td>Super Star Pizza Cranbourne</td><td>6, 1 High Street, Cranbourne, VIC, 3977, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-g"><td>The Escape Cafe Merrylands</td><td>Shop 1069A, GF, 1 McFarlane Street, Merrylands, NSW, 2146, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-y"><td>Iguana Street Bar &amp; Resturant</td><td>203 Victoria Street, Hamilton, Waikato Region, 3204, NZ</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-y">3</td></tr>
-<tr class="tr-r"><td>Kailash</td><td>396 Grey Street, Hamilton, Waikato Region, 3216, NZ</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-r"><td>Basker Modern Beach Kitchen</td><td>3 Reweti Drive, Whitianga, Waikato Region, 3510, NZ</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-g"><td>Gong Cha Westfield Sydney(New)</td><td>188 Pitt Street, Sydney, NSW, 2000, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-<tr class="tr-y"><td>Pricesavers Midland</td><td>25 Brockman Road, Midland, WA, 6056, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5310</td><td>5310 Discount Stores</td><td>—</td><td>7_DAY</td><td class="rs rs-y">2</td></tr>
-<tr class="tr-r"><td>MacNab Bros Butchers - Pimpama</td><td>Shop 4, 102 Pimpama Jacobs Well Road, Pimpama, QLD, 4209, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5422</td><td>5422 Freezer and Meat Provisioners</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">4</td></tr>
-<tr class="tr-r"><td>Hyderabad Darbar Restaurant</td><td>52d Foster Street, Dandenong, VIC, 3175, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">5</td></tr>
-<tr class="tr-g"><td>Molly Tea 130 Burwood</td><td>130 Burwood Road, Burwood, NSW, 2134, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
-
+        <tr class="tr-y"><td>Order Lemon Rhodes</td><td>G09, Rhodes Central Shopping Centre, 6-14 Walker Street, Rhodes, NSW, 2138, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-y">2</td></tr><tr class="tr-y"><td>Zan Foods</td><td>3 Ashburn Place, Blackburn, VIC, 3130, AU</td><td><span class="b b-md">Medium</span></td><td><span class="b b-res">Residential</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-y">3</td></tr><tr class="tr-g"><td>Knick Knacks Kilkenny</td><td>470 Torrens Road, Kilkenny, SA, 5009, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5947 Gift, Card, Novelty Stores</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr><tr class="tr-g"><td>Clyde Crownn Hair Cut</td><td>3 Observatory Street, Clyde North, VIC, 3978, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>7230</td><td>7230 Beauty and Barber Shops</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr><tr class="tr-g"><td>The Gully Fish Shop</td><td>92 Station Street, Ferntree Gully, VIC, 3156, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5814 Fast Food Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr><tr class="tr-r"><td>Nature&#x27;s Fresh Produce</td><td>7 Classic Way, Burleigh Waters, QLD, 4220, AU</td><td><span class="b b-lo">Low</span></td><td><span class="b b-com">Commercial</span></td><td>5411</td><td>5499 Miscellaneous Food Stores</td><td><span class="b b-moto">MOTO</span></td><td>5_DAY</td><td class="rs rs-r">5</td></tr><tr class="tr-g"><td>PHO NGON NGON</td><td>26a Hewish Road, Croydon, VIC, 3136, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr><tr class="tr-g"><td>Wodonga Charcoal Chicken</td><td>166 High Street, Wodonga, VIC, 3690, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr><tr class="tr-g"><td>Gaon Korean BBQ Canberra city</td><td>1, 30 Northbourne Avenue, Canberra, ACT, 2601, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>7_DAY</td><td class="rs rs-g">1</td></tr><tr class="tr-r"><td>Smokin Joes Pizza &amp; Grill Richmond</td><td>440 Church Street, Richmond, VIC, 3121, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td><span class="b b-moto">MOTO</span></td><td>7_DAY</td><td class="rs rs-r">4</td></tr><tr class="tr-g"><td>Trafalgar St Espresso</td><td>18 Trafalgar Street, Annandale, NSW, 2038, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr><tr class="tr-g"><td>Smith &amp; Makenzie</td><td>13 Lynden Court, Hamilton, Waikato Region, 3210, NZ</td><td><span class="b b-md">Medium</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5813 Drinking Places, Bars</td><td>—</td><td>5_DAY</td><td class="rs rs-g">1</td></tr><tr class="tr-g"><td>Sushi Gin Perth</td><td>183 Murray Street Mall, Perth, WA, 6000, AU</td><td><span class="b b-hi">High</span></td><td><span class="b b-com">Commercial</span></td><td>5812</td><td>5812 Eating Places, Restaurants</td><td>—</td><td>5_DAY</td><td class="rs rs-g">0</td></tr>
       </tbody>
     </table>
   </div>
 
   <footer class="site-footer">
-    <span>Generated 24 Oct 2026, 8:55 AM AEDT · CCR automated pipeline</span>
+    <span>Generated 27 Oct 2026, 8:30 AM AEST · CCR automated pipeline</span>
     <div class="footer-links">
-      <a href="https://docs.google.com/spreadsheets/d/1focX7wEbDXCR2RwpknP2NEradSrd_YTW3_Ofgg5hE-k/edit">Google Sheet →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1KWZP3yAVC4jQhLtBrnX3JYLb8Jy7FQJw_yoh9SCQGYw/edit">Google Sheet →</a>
       <a href="https://eugene-mx51.github.io/merchant-review-report/">Report link</a>
     </div>
   </footer>
